@@ -1,5 +1,15 @@
 # HIDS Docker
 
+In this repository we present a docker dataset based on system calls and the source code used for its experimental evaluation, more details are presented in [HIDS Docker Information] (you can also read the same README in [portuguese](README.pt.md)):
+
+## Table of Contents ##
+- [How do I get set up?](#how-do-i-get-set-up?)
+    - [Install](#install)
+    - [Setup](#setup)
+- [Examples](#examples)
+- [Contribution guidelines](#contribution-guidelines)
+- [License](#license)
+
 ## How do I get set up? ##
 
 The following components should be installed:
@@ -26,7 +36,7 @@ sudo apt install python3 python3-pip
 
 Clone this repository:
 ```
-git clone https://github.com/gabrielruschel/hids-docker
+git clone https://github.com/Carmofrasao/hids-docker
 ```
 
 And install the dependencies using pip3:
@@ -38,12 +48,12 @@ pip3 install -r requirements.txt
 ## Examples ##
 
 To run the tests, just use the following command:
-```
-python3 main.py [-d {sbseg,iscc}] [-f {raw,filter}] <window_size>
-python3 -u TCC/scripts/rf.py --dataset histograma.csv
-```
-* `-d`: specifies which dataset to use (default: iscc)
-* `-f`: specifies which filter mode to use (default: raw)
-* `window_size`: specifies the size of the window be used in the tests.
 
-The `-h` argument shows the help message. It is possible to edit in the main section of the code which specific methods you want to test.
+```
+python3 histogram.py > <histogram>
+```
+
+```
+python3 rf.py --dataset <histogram>
+```
+* `-d`: specifies which dataset to use
