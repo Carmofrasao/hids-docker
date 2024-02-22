@@ -1,0 +1,588 @@
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=670882(apache2) pid=669031(apache2) ptid=668705(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=0 vm_size=408900 vm_rss=56036 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-4d81cb26c66231747b04db742cd4f8fff01cc68354eaa9325... flags=578861571(CLONE_FILES|CLONE_FS|CLONE_PARENT_SETTID|CLONE_SIGHAND|CLONE_SYSVSEM|CLONE_THREAD|CLONE_VM|CLONE_CHILD_CLEARTID|CLONE_SETTLS) uid=33 gid=33 vtid=74 vpid=68 
+set_robust_list 
+set_robust_list 
+getpid 
+getpid 
+mmap addr=0 length=134217728 prot=0(PROT_NONE) flags=74(MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE) fd=-1(EPERM) offset=0 
+mmap res=7F82C8DFF000 vm_size=539972 vm_rss=56036 vm_swap=0 
+munmap addr=7F82C8DFF000 length=52432896 
+munmap res=0 vm_size=488768 vm_rss=56036 vm_swap=0 
+munmap addr=7F82D0000000 length=14675968 
+munmap res=0 vm_size=474436 vm_rss=56036 vm_swap=0 
+mprotect 
+mprotect 
+open 
+open fd=13(<f>/etc/resolv.conf) name=/etc/resolv.conf flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=13(<f>/etc/resolv.conf) 
+fstat res=0 
+read fd=13(<f>/etc/resolv.conf) size=1024 
+read res=64 data=search lan.nameserver 127.0.0.11.options edns0 trust-ad ndots:0. 
+read fd=13(<f>/etc/resolv.conf) size=1024 
+read res=0 data= 
+close fd=13(<f>/etc/resolv.conf) 
+close res=0 
+open 
+open fd=13(<f>/etc/hosts) name=/etc/hosts flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=13(<f>/etc/hosts) 
+fstat res=0 
+read fd=13(<f>/etc/hosts) size=512 
+read res=174 data=127.0.0.1.localhost.::1.localhost ip6-localhost ip6-loopback.fe00::0.ip6-localne 
+read fd=13(<f>/etc/hosts) size=512 
+read res=0 data= 
+close fd=13(<f>/etc/hosts) 
+close res=0 
+open 
+open fd=13(<f>/etc/gai.conf) name=/etc/gai.conf flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=65 
+fstat fd=13(<f>/etc/gai.conf) 
+fstat res=0 
+fstat fd=13(<f>/etc/gai.conf) 
+fstat res=0 
+read fd=13(<f>/etc/gai.conf) size=3072 
+read res=2584 data=# Configuration for getaddrinfo(3)..#.# So far only configuration for the destin 
+read fd=13(<f>/etc/gai.conf) size=3072 
+read res=0 data= 
+close fd=13(<f>/etc/gai.conf) 
+close res=0 
+futex addr=7F82E9120EE4 op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+socket domain=16(AF_ROUTE) type=3 proto=0 
+socket fd=13(<n>) 
+bind fd=13(<n>) 
+bind res=0 addr=NULL 
+getsockname 
+getsockname 
+sendto fd=13(<n>) size=20 tuple=NULL 
+sendto res=20 data=........4..d........ 
+recvmsg fd=13(<n>) 
+recvmsg res=164 size=164 data=L.......4..dD...............................lo.......................[*..[*.X... tuple=NULL 
+recvmsg fd=13(<n>) 
+recvmsg res=20 size=20 data=........4..dD....... tuple=NULL 
+close fd=13(<n>) 
+close res=0 
+socket domain=2(AF_INET) type=2 proto=0 
+socket fd=13(<4>) 
+connect fd=13(<4>) 
+connect res=0 tuple=127.0.0.1:52214->127.0.0.1:9000 
+getsockname 
+getsockname 
+close fd=13(<4u>127.0.0.1:52214->127.0.0.1:9000) 
+close res=0 
+socket domain=10(AF_INET6) type=2 proto=0 
+socket fd=13(<6>) 
+connect fd=13(<6>) 
+connect res=-99(EADDRNOTAVAIL) tuple=:::56751->::1:9000 
+close fd=13(<6>) 
+close res=0 
+madvise 
+madvise 
+exit 
+accept fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) tuple=172.18.0.1:50192->172.18.0.3:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[1708996]) 
+fcntl fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9AFC000 vm_size=383144 vm_rss=8984 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9AFA000 vm_size=383152 vm_rss=8984 vm_swap=0 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=8000 
+read res=1096 data=GET /wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/passwd 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9AF8000 vm_size=383160 vm_rss=8984 vm_swap=0 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=234 data=# BEGIN WordPress.<IfModule mod_rewrite.c>.RewriteEngine On.RewriteBase /.Rewrit 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9AF6000 vm_size=383168 vm_rss=8984 vm_swap=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/inc/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php 
+brk addr=55F39A653000 
+brk res=55F39A653000 vm_size=383328 vm_rss=10216 vm_swap=0 
+brk addr=55F39A674000 
+brk res=55F39A674000 vm_size=383460 vm_rss=11428 vm_swap=0 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+setitimer 
+setitimer 
+rt_sigaction 
+rt_sigaction 
+rt_sigprocmask 
+rt_sigprocmask 
+mmap addr=0 length=65536 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9A9C000 vm_size=383524 vm_rss=12216 vm_swap=0 
+getcwd 
+getcwd res=14 path=/var/www/html 
+chdir 
+chdir res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign 
+fcntl fd=8(<f>/tmp/.ZendSem.8fyzSL (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins/mail-masta 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins 
+lstat 
+lstat res=0 path=/var/www/html/wp-content 
+lstat 
+lstat res=0 path=/var/www/html 
+lstat 
+lstat res=0 path=/var/www 
+lstat 
+lstat res=0 path=/var 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php 
+lstat 
+lstat res=0 path=/etc/passwd 
+lstat 
+lstat res=0 path=/etc 
+stat 
+stat res=0 path=/etc/passwd 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9A9A000 vm_size=383532 vm_rss=12216 vm_swap=0 
+chdir 
+chdir res=0 path=/var/www/html 
+setitimer 
+setitimer 
+fcntl fd=8(<f>/tmp/.ZendSem.8fyzSL (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+setitimer 
+setitimer 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9A98000 vm_size=383540 vm_rss=12216 vm_swap=0 
+brk addr=55F39A69D000 
+brk res=55F39A69D000 vm_size=383704 vm_rss=12216 vm_swap=0 
+brk addr=55F39A6DD000 
+brk res=55F39A6DD000 vm_size=383960 vm_rss=12216 vm_swap=0 
+brk addr=55F39A69D000 
+brk res=55F39A69D000 vm_size=383704 vm_rss=13620 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9A96000 vm_size=383712 vm_rss=13620 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9A94000 vm_size=383720 vm_rss=13620 vm_swap=0 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=818 
+writev res=818 data=HTTP/1.1 200 OK..Date: Wed, 09 Aug 2023 21:56:10 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[1708995]) size=219 
+write res=219 data=172.18.0.1 - - [09/Aug/2023:21:56:10 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=8000 
+read res=860 data=GET /favicon.ico HTTP/1.1..Host: localhost:9000..User-Agent: Mozilla/5.0 (Window 
+stat 
+stat res=-2(ENOENT) path=/var/www/html/favicon.ico 
+lstat 
+lstat res=0 path=/var 
+lstat 
+lstat res=0 path=/var/www 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+lstat 
+lstat res=0 path=/var/www/html 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=234 data=# BEGIN WordPress.<IfModule mod_rewrite.c>.RewriteEngine On.RewriteBase /.Rewrit 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+lstat 
+lstat res=-2(ENOENT) path=/var/www/html/favicon.ico 
+stat 
+stat res=-2(ENOENT) path=/var/www/html/favicon.ico 
+stat 
+stat res=-2(ENOENT) path=/var/www/html/favicon.ico 
+stat 
+stat res=0 path=/var/www/html/index.php 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+setitimer 
+setitimer 
+rt_sigaction 
+rt_sigaction 
+rt_sigprocmask 
+rt_sigprocmask 
+getcwd 
+getcwd res=14 path=/var/www/html 
+chdir 
+chdir res=0 path=/var/www/html 
+fcntl fd=8(<f>/tmp/.ZendSem.8fyzSL (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+lstat 
+lstat res=0 path=/var/www/html/index.php 
+stat 
+stat res=0 path=/var/www/html/index.php 
+lstat 
+lstat res=0 path=/var/www/html/wp-blog-header.php 
+stat 
+stat res=0 path=/var/www/html/wp-blog-header.php 
+stat 
+stat res=0 path=/var/www/html/wp-load.php 
+access mode=0(F_OK) 
+access res=0 name=/var/www/html/wp-config.php 
+stat 
+stat res=0 path=/var/www/html/wp-config.php 
+stat 
+stat res=0 path=/var/www/html/wp-settings.php 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/load.php 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes 
+stat 
+stat res=0 path=/var/www/html/wp-includes/load.php 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/default-constants.php 
+stat 
+stat res=0 path=/var/www/html/wp-includes/default-constants.php 
+stat 
+stat res=0 path=/var/www/html/wp-includes/plugin.php 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/class-wp-hook.php 
+stat 
+stat res=0 path=/var/www/html/wp-includes/class-wp-hook.php 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/version.php 
+stat 
+stat res=0 path=/var/www/html/wp-includes/version.php 
+mmap addr=0 length=65536 prot=7(PROT_READ|PROT_WRITE|PROT_EXEC) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F82E9A84000 vm_size=383784 vm_rss=14184 vm_swap=0 
+chdir 
+chdir res=0 path=/var/www/html 
+setitimer 
+setitimer 
+fcntl fd=8(<f>/tmp/.ZendSem.8fyzSL (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+setitimer 
+setitimer 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=227 
+writev res=227 data=HTTP/1.1 200 OK..Date: Wed, 09 Aug 2023 21:56:10 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[1708995]) size=251 
+write res=251 data=172.18.0.1 - - [09/Aug/2023:21:56:10 +0000] "GET /favicon.ico HTTP/1.1" 200 227  
+times 
+times 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=8000 
+read res=1096 data=GET /wp-content/plugins/mail-masta/inc/campaign/count_of_send.php?pl=/etc/passwd 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=234 data=# BEGIN WordPress.<IfModule mod_rewrite.c>.RewriteEngine On.RewriteBase /.Rewrit 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/inc/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+setitimer 
+setitimer 
+rt_sigaction 
+rt_sigaction 
+rt_sigprocmask 
+rt_sigprocmask 
+getcwd 
+getcwd res=14 path=/var/www/html 
+chdir 
+chdir res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign 
+fcntl fd=8(<f>/tmp/.ZendSem.8fyzSL (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/inc/campaign/count_of_send.php 
+stat 
+stat res=0 path=/etc/passwd 
+chdir 
+chdir res=0 path=/var/www/html 
+setitimer 
+setitimer 
+fcntl fd=8(<f>/tmp/.ZendSem.8fyzSL (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+setitimer 
+setitimer 
+brk addr=55F39A6BE000 
+brk res=55F39A6BE000 vm_size=383916 vm_rss=14184 vm_swap=0 
+brk addr=55F39A68E000 
+brk res=55F39A68E000 vm_size=383724 vm_rss=14408 vm_swap=0 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=817 
+writev res=817 data=HTTP/1.1 200 OK..Date: Wed, 09 Aug 2023 21:56:13 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[1708995]) size=219 
+write res=219 data=172.18.0.1 - - [09/Aug/2023:21:56:13 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=8000 
+read res=860 data=GET /favicon.ico HTTP/1.1..Host: localhost:9000..User-Agent: Mozilla/5.0 (Window 
+stat 
+stat res=-2(ENOENT) path=/var/www/html/favicon.ico 
+lstat 
+lstat res=0 path=/var 
+lstat 
+lstat res=0 path=/var/www 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+lstat 
+lstat res=0 path=/var/www/html 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=234 data=# BEGIN WordPress.<IfModule mod_rewrite.c>.RewriteEngine On.RewriteBase /.Rewrit 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+lstat 
+lstat res=-2(ENOENT) path=/var/www/html/favicon.ico 
+stat 
+stat res=-2(ENOENT) path=/var/www/html/favicon.ico 
+stat 
+stat res=-2(ENOENT) path=/var/www/html/favicon.ico 
+stat 
+stat res=0 path=/var/www/html/index.php 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+setitimer 
+setitimer 
+rt_sigaction 
+rt_sigaction 
+rt_sigprocmask 
+rt_sigprocmask 
+getcwd 
+getcwd res=14 path=/var/www/html 
+chdir 
+chdir res=0 path=/var/www/html 
+fcntl fd=8(<f>/tmp/.ZendSem.8fyzSL (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+stat 
+stat res=0 path=/var/www/html/index.php 
+stat 
+stat res=0 path=/var/www/html/wp-blog-header.php 
+stat 
+stat res=0 path=/var/www/html/wp-load.php 
+access mode=0(F_OK) 
+access res=0 name=/var/www/html/wp-config.php 
+stat 
+stat res=0 path=/var/www/html/wp-config.php 
+stat 
+stat res=0 path=/var/www/html/wp-settings.php 
+stat 
+stat res=0 path=/var/www/html/wp-includes/load.php 
+stat 
+stat res=0 path=/var/www/html/wp-includes/default-constants.php 
+stat 
+stat res=0 path=/var/www/html/wp-includes/plugin.php 
+stat 
+stat res=0 path=/var/www/html/wp-includes/class-wp-hook.php 
+stat 
+stat res=0 path=/var/www/html/wp-includes/version.php 
+chdir 
+chdir res=0 path=/var/www/html 
+setitimer 
+setitimer 
+fcntl fd=8(<f>/tmp/.ZendSem.8fyzSL (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+setitimer 
+setitimer 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=227 
+writev res=227 data=HTTP/1.1 200 OK..Date: Wed, 09 Aug 2023 21:56:13 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[1708995]) size=251 
+write res=251 data=172.18.0.1 - - [09/Aug/2023:21:56:13 +0000] "GET /favicon.ico HTTP/1.1" 200 227  
+times 
+times 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=8000 
+read res=0 data= 
+shutdown fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) how=1(SHUT_WR) 
+shutdown res=0 
+poll fds=10:41 timeout=2000 
+poll res=1 fds=10:421 
+read fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) size=512 
+read res=0 data= 
+close fd=10(<4t>172.18.0.1:50192->172.18.0.3:80) 
+close res=0 
+read fd=4(<p>pipe:[1706942]) size=1 
+read res=-11(EAGAIN) data= 
+accept flags=0 
+accept fd=-512(ERESTARTSYS) tuple=NULL queuepct=0 queuelen=0 queuemax=511 
+close fd=9 
+close res=0 
+munmap addr=7F82D285F000 length=134217728 
+munmap res=0 vm_size=252652 vm_rss=13680 vm_swap=0 
+close fd=8(<f>/tmp/.ZendSem.8fyzSL (deleted)) 
+close res=0 
+munmap addr=7F82DA85F000 length=2243784 
+munmap res=0 vm_size=250460 vm_rss=13624 vm_swap=0 
+munmap addr=7F82DAF21000 length=2517856 
+munmap res=0 vm_size=248000 vm_rss=13644 vm_swap=0 
+munmap addr=7F82DACEE000 length=2301968 
+munmap res=0 vm_size=245748 vm_rss=13616 vm_swap=0 
+munmap addr=7F82DAA83000 length=2531352 
+munmap res=0 vm_size=243272 vm_rss=13588 vm_swap=0 
+munmap addr=7F82E9A9C000 length=65536 
+munmap res=0 vm_size=243208 vm_rss=14396 vm_swap=0 
+brk addr=55F39A641000 
+brk res=55F39A641000 vm_size=242900 vm_rss=14208 vm_swap=0 
+munmap addr=7F82DB188000 length=2584984 
+munmap res=0 vm_size=240372 vm_rss=13832 vm_swap=0 
+munmap addr=7F82E9AAC000 length=299008 
+munmap res=0 vm_size=240080 vm_rss=13644 vm_swap=0 
+munmap addr=7F82DB400000 length=2097152 
+munmap res=0 vm_size=238032 vm_rss=11596 vm_swap=0 
+munmap addr=7F82E9B1A000 length=323584 
+munmap res=0 vm_size=237716 vm_rss=11592 vm_swap=0 
+munmap addr=7F82E9B04000 length=8192 
+munmap res=0 vm_size=237708 vm_rss=11588 vm_swap=0 
+munmap addr=7F82E9AFE000 length=8192 
+munmap res=0 vm_size=237700 vm_rss=11584 vm_swap=0 
+munmap addr=7F82E9B02000 length=8192 
+munmap res=0 vm_size=237692 vm_rss=11580 vm_swap=0 
+munmap addr=7F82E9B00000 length=8192 
+munmap res=0 vm_size=237684 vm_rss=11576 vm_swap=0 
+munmap addr=7F82E9A94000 length=8192 
+munmap res=0 vm_size=237676 vm_rss=11572 vm_swap=0 
+munmap addr=7F82E9AFC000 length=8192 
+munmap res=0 vm_size=237668 vm_rss=11564 vm_swap=0 
+munmap addr=7F82E9AF8000 length=8192 
+munmap res=0 vm_size=237660 vm_rss=11556 vm_swap=0 
+munmap addr=7F82E9A96000 length=8192 
+munmap res=0 vm_size=237652 vm_rss=11552 vm_swap=0 
+munmap addr=7F82E9A9A000 length=8192 
+munmap res=0 vm_size=237644 vm_rss=11544 vm_swap=0 
+munmap addr=7F82E9AFA000 length=8192 
+munmap res=0 vm_size=237636 vm_rss=11540 vm_swap=0 
+munmap addr=7F82E9A98000 length=8192 
+munmap res=0 vm_size=237628 vm_rss=11532 vm_swap=0 
+munmap addr=7F82E9AF6000 length=8192 
+munmap res=0 vm_size=237620 vm_rss=11524 vm_swap=0 
+close fd=5(<p>pipe:[1706942]) 
+close res=0 
+close fd=4(<p>pipe:[1706942]) 
+close res=0 
+futex addr=7F82E38978EC op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+exit_group 

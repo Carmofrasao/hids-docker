@@ -1,0 +1,2194 @@
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=821881(apache2) pid=821723(apache2) ptid=821369(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=0 vm_size=406856 vm_rss=53368 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-4d81cb26c66231747b04db742cd4f8fff01cc68354eaa9325... flags=578861571(CLONE_FILES|CLONE_FS|CLONE_PARENT_SETTID|CLONE_SIGHAND|CLONE_SYSVSEM|CLONE_THREAD|CLONE_VM|CLONE_CHILD_CLEARTID|CLONE_SETTLS) uid=33 gid=33 vtid=74 vpid=68 
+set_robust_list 
+set_robust_list 
+getpid 
+getpid 
+mmap addr=0 length=134217728 prot=0(PROT_NONE) flags=74(MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE) fd=-1(EPERM) offset=0 
+mmap res=7F57EEBFF000 vm_size=537928 vm_rss=53368 vm_swap=0 
+munmap addr=7F57EEBFF000 length=20975616 
+munmap res=0 vm_size=517444 vm_rss=53368 vm_swap=0 
+munmap addr=7F57F4000000 length=46133248 
+munmap res=0 vm_size=472392 vm_rss=53368 vm_swap=0 
+mprotect 
+mprotect 
+open 
+open fd=13(<f>/etc/resolv.conf) name=/etc/resolv.conf flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=13(<f>/etc/resolv.conf) 
+fstat res=0 
+read fd=13(<f>/etc/resolv.conf) size=1024 
+read res=53 data=nameserver 127.0.0.11.options edns0 trust-ad ndots:0. 
+read fd=13(<f>/etc/resolv.conf) size=1024 
+read res=0 data= 
+close fd=13(<f>/etc/resolv.conf) 
+close res=0 
+uname 
+uname 
+open 
+open fd=13(<f>/etc/hosts) name=/etc/hosts flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=13(<f>/etc/hosts) 
+fstat res=0 
+read fd=13(<f>/etc/hosts) size=512 
+read res=174 data=127.0.0.1.localhost.::1.localhost ip6-localhost ip6-loopback.fe00::0.ip6-localne 
+read fd=13(<f>/etc/hosts) size=512 
+read res=0 data= 
+close fd=13(<f>/etc/hosts) 
+close res=0 
+open 
+open fd=13(<f>/etc/gai.conf) name=/etc/gai.conf flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=62 
+fstat fd=13(<f>/etc/gai.conf) 
+fstat res=0 
+fstat fd=13(<f>/etc/gai.conf) 
+fstat res=0 
+read fd=13(<f>/etc/gai.conf) size=3072 
+read res=2584 data=# Configuration for getaddrinfo(3)..#.# So far only configuration for the destin 
+read fd=13(<f>/etc/gai.conf) size=3072 
+read res=0 data= 
+close fd=13(<f>/etc/gai.conf) 
+close res=0 
+futex addr=7F580EEE0EE4 op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+socket domain=16(AF_ROUTE) type=3 proto=0 
+socket fd=13(<n>) 
+bind fd=13(<n>) 
+bind res=0 addr=NULL 
+getsockname 
+getsockname 
+sendto fd=13(<n>) size=20 tuple=NULL 
+sendto res=20 data=........7C.d........ 
+recvmsg fd=13(<n>) 
+recvmsg res=164 size=164 data=L.......7C.dD...............................lo.......................;7..;7.X... tuple=NULL 
+recvmsg fd=13(<n>) 
+recvmsg res=20 size=20 data=........7C.dD....... tuple=NULL 
+close fd=13(<n>) 
+close res=0 
+socket domain=2(AF_INET) type=2 proto=0 
+socket fd=13(<4>) 
+connect fd=13(<4>) 
+connect res=0 tuple=127.0.0.1:54441->127.0.0.1:9000 
+getsockname 
+getsockname 
+close fd=13(<4u>127.0.0.1:54441->127.0.0.1:9000) 
+close res=0 
+socket domain=10(AF_INET6) type=2 proto=0 
+socket fd=13(<6>) 
+connect fd=13(<6>) 
+connect res=-99(EADDRNOTAVAIL) tuple=:::43202->::1:9000 
+close fd=13(<6>) 
+close res=0 
+madvise 
+madvise 
+exit 
+accept fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) tuple=172.18.0.1:39174->172.18.0.3:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[2182473]) 
+fcntl fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BC000 vm_size=383144 vm_rss=8976 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BA000 vm_size=383152 vm_rss=8976 vm_swap=0 
+read fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=8000 
+read res=996 data=GET /wp-content/plugins/mail-masta/lib/jquery.validationEngine.js?ver=4.9.2 HTTP 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B8000 vm_size=383160 vm_rss=8976 vm_swap=0 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=234 data=# BEGIN WordPress.<IfModule mod_rewrite.c>.RewriteEngine On.RewriteBase /.Rewrit 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B6000 vm_size=383168 vm_rss=8976 vm_swap=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=68709 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js) offset=0 
+mmap res=7F580F85B000 vm_size=383236 vm_rss=8976 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F859000 vm_size=383244 vm_rss=8976 vm_swap=0 
+brk addr=564E97A80000 
+brk res=564E97A80000 vm_size=383400 vm_rss=10048 vm_swap=0 
+brk addr=564E97AB0000 
+brk res=564E97AB0000 vm_size=383592 vm_rss=10048 vm_swap=0 
+munmap addr=7F580F85B000 length=68709 
+munmap res=0 vm_size=383524 vm_rss=10368 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F86A000 vm_size=383532 vm_rss=10368 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F868000 vm_size=383540 vm_rss=10368 vm_swap=0 
+brk addr=564E97A80000 
+brk res=564E97A80000 vm_size=383348 vm_rss=10276 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F866000 vm_size=383356 vm_rss=10276 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F864000 vm_size=383364 vm_rss=10276 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=16422 
+writev res=16422 data=HTTP/1.1 200 OK..Date: Thu, 10 Aug 2023 01:53:59 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[2182472]) size=237 
+write res=237 data=172.18.0.1 - - [10/Aug/2023:01:53:59 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js) 
+close res=0 
+read fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=8000 
+read res=792 data=GET /wp-includes/js/wp-a11y.min.js?ver=4.9.2 HTTP/1.1..Host: localhost:9000..Use 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/wp-a11y.min.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=234 data=# BEGIN WordPress.<IfModule mod_rewrite.c>.RewriteEngine On.RewriteBase /.Rewrit 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-includes/js/wp-a11y.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/wp-a11y.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) name=/var/www/html/wp-includes/js/wp-a11y.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=653 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) offset=0 
+mmap res=7F580F8B5000 vm_size=383368 vm_rss=10276 vm_swap=0 
+brk addr=564E97AB0000 
+brk res=564E97AB0000 vm_size=383560 vm_rss=10276 vm_swap=0 
+munmap addr=7F580F8B5000 length=653 
+munmap res=0 vm_size=383556 vm_rss=10404 vm_swap=0 
+brk addr=564E97A80000 
+brk res=564E97A80000 vm_size=383364 vm_rss=10320 vm_swap=0 
+read fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=723 
+writev res=723 data=HTTP/1.1 200 OK..Date: Thu, 10 Aug 2023 01:53:59 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[2182472]) size=204 
+write res=204 data=172.18.0.1 - - [10/Aug/2023:01:53:59 +0000] "GET /wp-includes/js/wp-a11y.min.js? 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=8000 
+read res=803 data=GET /wp-includes/js/jquery/jquery.form.min.js?ver=4.2.1 HTTP/1.1..Host: localhos 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/jquery.form.min.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=234 data=# BEGIN WordPress.<IfModule mod_rewrite.c>.RewriteEngine On.RewriteBase /.Rewrit 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-includes/js/jquery/jquery.form.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/jquery.form.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/jquery.form.min.js) name=/var/www/html/wp-includes/js/jquery/jquery.form.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=16598 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-includes/js/jquery/jquery.form.min.js) offset=0 
+mmap res=7F580F85F000 vm_size=383384 vm_rss=10320 vm_swap=0 
+brk addr=564E97AB0000 
+brk res=564E97AB0000 vm_size=383576 vm_rss=10320 vm_swap=0 
+munmap addr=7F580F85F000 length=16598 
+munmap res=0 vm_size=383556 vm_rss=10416 vm_swap=0 
+brk addr=564E97A80000 
+brk res=564E97A80000 vm_size=383364 vm_rss=10320 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=6645 
+writev res=6645 data=HTTP/1.1 200 OK..Date: Thu, 10 Aug 2023 01:53:59 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[2182472]) size=216 
+write res=216 data=172.18.0.1 - - [10/Aug/2023:01:53:59 +0000] "GET /wp-includes/js/jquery/jquery.f 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/jquery.form.min.js) 
+close res=0 
+read fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=821890(apache2) pid=821890(apache2) ptid=821369(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=1 vm_size=383104 vm_rss=7636 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-4d81cb26c66231747b04db742cd4f8fff01cc68354eaa9325... flags=562036736(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID) uid=0 gid=0 vtid=75 vpid=75 
+set_robust_list 
+set_robust_list 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+getpid 
+getpid 
+getpid 
+getpid 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C4000 vm_size=383112 vm_rss=7636 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C2000 vm_size=383120 vm_rss=7636 vm_swap=0 
+geteuid 
+geteuid euid=0(root) 
+setgid gid=33(www-data) 
+setgid res=0 
+open 
+open fd=9(<f>/proc/sys/kernel/ngroups_max) name=/proc/sys/kernel/ngroups_max flags=1(O_RDONLY) mode=0 dev=64 
+read fd=9(<f>/proc/sys/kernel/ngroups_max) size=31 
+read res=6 data=65536. 
+close fd=9(<f>/proc/sys/kernel/ngroups_max) 
+close res=0 
+open 
+open fd=9(<f>/etc/group) name=/etc/group flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=62 
+lseek fd=9(<f>/etc/group) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+mmap addr=0 length=446 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=9(<f>/etc/group) offset=0 
+mmap res=7F580F8C1000 vm_size=383124 vm_rss=7636 vm_swap=0 
+lseek fd=9(<f>/etc/group) offset=446 whence=0(SEEK_SET) 
+lseek res=446 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+munmap addr=7F580F8C1000 length=446 
+munmap res=0 vm_size=383120 vm_rss=9000 vm_swap=0 
+close fd=9(<f>/etc/group) 
+close res=0 
+setgroups 
+setgroups 
+geteuid 
+geteuid euid=0(root) 
+setuid uid=33(www-data) 
+setuid res=0 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C0000 vm_size=383128 vm_rss=9000 vm_swap=0 
+getpid 
+getpid 
+epoll_create1 
+epoll_create1 
+epoll_ctl 
+epoll_ctl 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BE000 vm_size=383136 vm_rss=9000 vm_swap=0 
+accept flags=0 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=821896(apache2) pid=821896(apache2) ptid=821369(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=1 vm_size=383104 vm_rss=7636 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-4d81cb26c66231747b04db742cd4f8fff01cc68354eaa9325... flags=562036736(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID) uid=0 gid=0 vtid=77 vpid=77 
+set_robust_list 
+set_robust_list 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=821895(apache2) pid=821895(apache2) ptid=821369(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=1 vm_size=383104 vm_rss=7636 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-4d81cb26c66231747b04db742cd4f8fff01cc68354eaa9325... flags=562036736(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID) uid=0 gid=0 vtid=76 vpid=76 
+set_robust_list 
+set_robust_list 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+getpid 
+getpid 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+getpid 
+getpid 
+getpid 
+getpid 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C4000 vm_size=383112 vm_rss=7636 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C2000 vm_size=383120 vm_rss=7636 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C4000 vm_size=383112 vm_rss=7636 vm_swap=0 
+geteuid 
+geteuid euid=0(root) 
+setgid gid=33(www-data) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+setgid res=0 
+mmap res=7F580F8C2000 vm_size=383120 vm_rss=7636 vm_swap=0 
+open 
+geteuid 
+geteuid euid=0(root) 
+setgid gid=33(www-data) 
+setgid res=0 
+open 
+open fd=9(<f>/proc/sys/kernel/ngroups_max) name=/proc/sys/kernel/ngroups_max flags=1(O_RDONLY) mode=0 dev=64 
+read fd=9(<f>/proc/sys/kernel/ngroups_max) size=31 
+read res=6 data=65536. 
+close fd=9(<f>/proc/sys/kernel/ngroups_max) 
+close res=0 
+open fd=9(<f>/proc/sys/kernel/ngroups_max) name=/proc/sys/kernel/ngroups_max flags=1(O_RDONLY) mode=0 dev=64 
+read fd=9(<f>/proc/sys/kernel/ngroups_max) size=31 
+read res=6 data=65536. 
+close fd=9(<f>/proc/sys/kernel/ngroups_max) 
+close res=0 
+open 
+open fd=9(<f>/etc/group) name=/etc/group flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=62 
+open 
+lseek fd=9(<f>/etc/group) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=9(<f>/etc/group) 
+open fd=9(<f>/etc/group) name=/etc/group flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=62 
+fstat res=0 
+mmap addr=0 length=446 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=9(<f>/etc/group) offset=0 
+lseek fd=9(<f>/etc/group) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=9(<f>/etc/group) 
+mmap res=7F580F8C1000 vm_size=383124 vm_rss=7636 vm_swap=0 
+fstat res=0 
+lseek fd=9(<f>/etc/group) offset=446 whence=0(SEEK_SET) 
+lseek res=446 
+mmap addr=0 length=446 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=9(<f>/etc/group) offset=0 
+mmap res=7F580F8C1000 vm_size=383124 vm_rss=7636 vm_swap=0 
+lseek fd=9(<f>/etc/group) offset=446 whence=0(SEEK_SET) 
+lseek res=446 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+munmap addr=7F580F8C1000 length=446 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+munmap addr=7F580F8C1000 length=446 
+munmap res=0 vm_size=383120 vm_rss=9000 vm_swap=0 
+close fd=9(<f>/etc/group) 
+close res=0 
+munmap res=0 vm_size=383120 vm_rss=9000 vm_swap=0 
+close fd=9(<f>/etc/group) 
+close res=0 
+setgroups 
+setgroups 
+setgroups 
+geteuid 
+geteuid euid=0(root) 
+setgroups 
+setuid uid=33(www-data) 
+geteuid 
+geteuid euid=0(root) 
+setuid res=0 
+setuid uid=33(www-data) 
+setuid res=0 
+getpid 
+getpid 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C0000 vm_size=383128 vm_rss=9000 vm_swap=0 
+mmap res=7F580F8C0000 vm_size=383128 vm_rss=9000 vm_swap=0 
+getpid 
+getpid 
+getpid 
+getpid 
+epoll_create1 
+epoll_create1 
+epoll_create1 
+epoll_create1 
+epoll_ctl 
+epoll_ctl 
+epoll_ctl 
+epoll_ctl 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BE000 vm_size=383136 vm_rss=9000 vm_swap=0 
+mmap res=7F580F8BE000 vm_size=383136 vm_rss=9000 vm_swap=0 
+accept flags=0 
+accept flags=0 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=821899(apache2) pid=821899(apache2) ptid=821369(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=1 vm_size=383104 vm_rss=7636 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-4d81cb26c66231747b04db742cd4f8fff01cc68354eaa9325... flags=562036736(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID) uid=0 gid=0 vtid=80 vpid=80 
+set_robust_list 
+set_robust_list 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+getpid 
+getpid 
+getpid 
+getpid 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C4000 vm_size=383112 vm_rss=7636 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C2000 vm_size=383120 vm_rss=7636 vm_swap=0 
+geteuid 
+geteuid euid=0(root) 
+setgid gid=33(www-data) 
+setgid res=0 
+open 
+open fd=9(<f>/proc/sys/kernel/ngroups_max) name=/proc/sys/kernel/ngroups_max flags=1(O_RDONLY) mode=0 dev=64 
+read fd=9(<f>/proc/sys/kernel/ngroups_max) size=31 
+read res=6 data=65536. 
+close fd=9(<f>/proc/sys/kernel/ngroups_max) 
+close res=0 
+open 
+open fd=9(<f>/etc/group) name=/etc/group flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=62 
+lseek fd=9(<f>/etc/group) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+mmap addr=0 length=446 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=9(<f>/etc/group) offset=0 
+mmap res=7F580F8C1000 vm_size=383124 vm_rss=7636 vm_swap=0 
+lseek fd=9(<f>/etc/group) offset=446 whence=0(SEEK_SET) 
+lseek res=446 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+munmap addr=7F580F8C1000 length=446 
+munmap res=0 vm_size=383120 vm_rss=9000 vm_swap=0 
+close fd=9(<f>/etc/group) 
+close res=0 
+setgroups 
+setgroups 
+geteuid 
+geteuid euid=0(root) 
+setuid uid=33(www-data) 
+setuid res=0 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C0000 vm_size=383128 vm_rss=9000 vm_swap=0 
+getpid 
+getpid 
+epoll_create1 
+epoll_create1 
+epoll_ctl 
+epoll_ctl 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BE000 vm_size=383136 vm_rss=9000 vm_swap=0 
+accept flags=0 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=821900(apache2) pid=821900(apache2) ptid=821369(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=1 vm_size=383104 vm_rss=7636 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-4d81cb26c66231747b04db742cd4f8fff01cc68354eaa9325... flags=562036736(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID) uid=0 gid=0 vtid=81 vpid=81 
+set_robust_list 
+set_robust_list 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=821898(apache2) pid=821898(apache2) ptid=821369(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=1 vm_size=383104 vm_rss=7636 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-4d81cb26c66231747b04db742cd4f8fff01cc68354eaa9325... flags=562036736(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID) uid=0 gid=0 vtid=79 vpid=79 
+set_robust_list 
+set_robust_list 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+getpid 
+getpid 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C4000 vm_size=383112 vm_rss=7636 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C2000 vm_size=383120 vm_rss=7636 vm_swap=0 
+geteuid 
+geteuid euid=0(root) 
+setgid gid=33(www-data) 
+setgid res=0 
+open 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+getpid 
+getpid 
+open fd=9(<f>/proc/sys/kernel/ngroups_max) name=/proc/sys/kernel/ngroups_max flags=1(O_RDONLY) mode=0 dev=64 
+read fd=9(<f>/proc/sys/kernel/ngroups_max) size=31 
+read res=6 data=65536. 
+close fd=9(<f>/proc/sys/kernel/ngroups_max) 
+close res=0 
+getpid 
+getpid 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C4000 vm_size=383112 vm_rss=7636 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+open 
+open fd=9(<f>/etc/group) name=/etc/group flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=62 
+lseek fd=9(<f>/etc/group) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+mmap addr=0 length=446 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=9(<f>/etc/group) offset=0 
+mmap res=7F580F8C1000 vm_size=383124 vm_rss=7636 vm_swap=0 
+lseek fd=9(<f>/etc/group) offset=446 whence=0(SEEK_SET) 
+lseek res=446 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+munmap addr=7F580F8C1000 length=446 
+munmap res=0 vm_size=383120 vm_rss=9000 vm_swap=0 
+close fd=9(<f>/etc/group) 
+close res=0 
+setgroups 
+setgroups 
+geteuid 
+geteuid euid=0(root) 
+setuid uid=33(www-data) 
+setuid res=0 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C0000 vm_size=383128 vm_rss=9000 vm_swap=0 
+getpid 
+getpid 
+epoll_create1 
+epoll_create1 
+epoll_ctl 
+epoll_ctl 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BE000 vm_size=383136 vm_rss=9000 vm_swap=0 
+accept flags=0 
+mmap res=7F580F8C2000 vm_size=383120 vm_rss=7636 vm_swap=0 
+geteuid 
+geteuid euid=0(root) 
+setgid gid=33(www-data) 
+setgid res=0 
+open 
+open fd=9(<f>/proc/sys/kernel/ngroups_max) name=/proc/sys/kernel/ngroups_max flags=1(O_RDONLY) mode=0 dev=64 
+read fd=9(<f>/proc/sys/kernel/ngroups_max) size=31 
+read res=6 data=65536. 
+close fd=9(<f>/proc/sys/kernel/ngroups_max) 
+close res=0 
+open 
+open fd=9(<f>/etc/group) name=/etc/group flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=62 
+lseek fd=9(<f>/etc/group) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+mmap addr=0 length=446 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=9(<f>/etc/group) offset=0 
+mmap res=7F580F8C1000 vm_size=383124 vm_rss=7636 vm_swap=0 
+lseek fd=9(<f>/etc/group) offset=446 whence=0(SEEK_SET) 
+lseek res=446 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+munmap addr=7F580F8C1000 length=446 
+munmap res=0 vm_size=383120 vm_rss=9000 vm_swap=0 
+close fd=9(<f>/etc/group) 
+close res=0 
+setgroups 
+setgroups 
+geteuid 
+geteuid euid=0(root) 
+setuid uid=33(www-data) 
+setuid res=0 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C0000 vm_size=383128 vm_rss=9000 vm_swap=0 
+getpid 
+getpid 
+epoll_create1 
+epoll_create1 
+epoll_ctl 
+epoll_ctl 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BE000 vm_size=383136 vm_rss=9000 vm_swap=0 
+accept flags=0 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=821897(apache2) pid=821897(apache2) ptid=821369(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=1 vm_size=383104 vm_rss=7636 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-4d81cb26c66231747b04db742cd4f8fff01cc68354eaa9325... flags=562036736(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID) uid=0 gid=0 vtid=78 vpid=78 
+set_robust_list 
+set_robust_list 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+getpid 
+getpid 
+getpid 
+getpid 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C4000 vm_size=383112 vm_rss=7636 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C2000 vm_size=383120 vm_rss=7636 vm_swap=0 
+geteuid 
+geteuid euid=0(root) 
+setgid gid=33(www-data) 
+setgid res=0 
+open 
+open fd=9(<f>/proc/sys/kernel/ngroups_max) name=/proc/sys/kernel/ngroups_max flags=1(O_RDONLY) mode=0 dev=64 
+read fd=9(<f>/proc/sys/kernel/ngroups_max) size=31 
+read res=6 data=65536. 
+close fd=9(<f>/proc/sys/kernel/ngroups_max) 
+close res=0 
+open 
+open fd=9(<f>/etc/group) name=/etc/group flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=62 
+lseek fd=9(<f>/etc/group) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+mmap addr=0 length=446 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=9(<f>/etc/group) offset=0 
+mmap res=7F580F8C1000 vm_size=383124 vm_rss=7636 vm_swap=0 
+lseek fd=9(<f>/etc/group) offset=446 whence=0(SEEK_SET) 
+lseek res=446 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+munmap addr=7F580F8C1000 length=446 
+munmap res=0 vm_size=383120 vm_rss=9000 vm_swap=0 
+close fd=9(<f>/etc/group) 
+close res=0 
+setgroups 
+setgroups 
+geteuid 
+geteuid euid=0(root) 
+setuid uid=33(www-data) 
+setuid res=0 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8C0000 vm_size=383128 vm_rss=9000 vm_swap=0 
+getpid 
+getpid 
+epoll_create1 
+epoll_create1 
+epoll_ctl 
+epoll_ctl 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BE000 vm_size=383136 vm_rss=9000 vm_swap=0 
+accept flags=0 
+poll res=0 fds= 
+shutdown fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) how=1(SHUT_WR) 
+shutdown res=0 
+poll fds=10:41 timeout=2000 
+poll res=1 fds=10:421 
+read fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) size=512 
+read res=0 data= 
+close fd=10(<4t>172.18.0.1:39174->172.18.0.3:80) 
+close res=0 
+read fd=4(<p>pipe:[2185612]) size=1 
+read res=-11(EAGAIN) data= 
+accept flags=0 
+accept fd=10(<4t>127.0.0.1:57350->127.0.0.1:80) tuple=127.0.0.1:57350->127.0.0.1:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>127.0.0.1:57350->127.0.0.1:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[2182473]) 
+fcntl fd=10(<4t>127.0.0.1:57350->127.0.0.1:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BC000 vm_size=383144 vm_rss=9000 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BA000 vm_size=383152 vm_rss=9000 vm_swap=0 
+read fd=10(<4t>127.0.0.1:57350->127.0.0.1:80) size=8000 
+read res=96 data=OPTIONS * HTTP/1.0..User-Agent: Apache/2.4.25 (Debian) PHP/7.2.1 (internal dummy 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B8000 vm_size=383160 vm_rss=9000 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B6000 vm_size=383168 vm_rss=9000 vm_swap=0 
+writev fd=10(<4t>127.0.0.1:57350->127.0.0.1:80) size=126 
+writev res=126 data=HTTP/1.1 200 OK..Date: Thu, 10 Aug 2023 01:54:05 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[2182472]) size=139 
+write res=139 data=127.0.0.1 - - [10/Aug/2023:01:54:05 +0000] "OPTIONS * HTTP/1.0" 200 126 "-" "Apa 
+times 
+times 
+shutdown fd=10(<4t>127.0.0.1:57350->127.0.0.1:80) how=1(SHUT_WR) 
+shutdown res=-107(ENOTCONN) 
+close fd=10(<4t>127.0.0.1:57350->127.0.0.1:80) 
+close res=0 
+read fd=4(<p>pipe:[2185612]) size=1 
+read res=1 data=! 
+close fd=9 
+close res=0 
+munmap addr=7F57F845F000 length=134217728 
+munmap res=0 vm_size=252096 vm_rss=11088 vm_swap=0 
+close fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) 
+close res=0 
+munmap addr=7F580045F000 length=2243784 
+munmap res=0 vm_size=249904 vm_rss=11200 vm_swap=0 
+munmap addr=7F5800B21000 length=2517856 
+munmap res=0 vm_size=247444 vm_rss=11220 vm_swap=0 
+munmap addr=7F58008EE000 length=2301968 
+munmap res=0 vm_size=245192 vm_rss=11192 vm_swap=0 
+munmap addr=7F5800683000 length=2531352 
+munmap res=0 vm_size=242716 vm_rss=11164 vm_swap=0 
+munmap addr=7F5800D88000 length=2584984 
+munmap res=0 vm_size=240188 vm_rss=12856 vm_swap=0 
+munmap addr=7F580F86C000 length=299008 
+munmap res=0 vm_size=239896 vm_rss=12668 vm_swap=0 
+munmap addr=7F5801000000 length=2097152 
+munmap res=0 vm_size=237848 vm_rss=10620 vm_swap=0 
+munmap addr=7F580F8DA000 length=323584 
+munmap res=0 vm_size=237532 vm_rss=10616 vm_swap=0 
+munmap addr=7F580F8C4000 length=8192 
+munmap res=0 vm_size=237524 vm_rss=10612 vm_swap=0 
+munmap addr=7F580F8BE000 length=8192 
+munmap res=0 vm_size=237516 vm_rss=10608 vm_swap=0 
+munmap addr=7F580F8C2000 length=8192 
+munmap res=0 vm_size=237508 vm_rss=10604 vm_swap=0 
+munmap addr=7F580F8C0000 length=8192 
+munmap res=0 vm_size=237500 vm_rss=10600 vm_swap=0 
+munmap addr=7F580F8BA000 length=8192 
+munmap res=0 vm_size=237492 vm_rss=10596 vm_swap=0 
+munmap addr=7F580F8B6000 length=8192 
+munmap res=0 vm_size=237484 vm_rss=10592 vm_swap=0 
+munmap addr=7F580F8BC000 length=8192 
+munmap res=0 vm_size=237476 vm_rss=10584 vm_swap=0 
+munmap addr=7F580F8B8000 length=8192 
+munmap res=0 vm_size=237468 vm_rss=10580 vm_swap=0 
+close fd=5(<p>pipe:[2185612]) 
+close res=0 
+close fd=4(<p>pipe:[2185612]) 
+close res=0 
+futex addr=7F58096578EC op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+exit_group 
+accept fd=10(<4t>127.0.0.1:57352->127.0.0.1:80) tuple=127.0.0.1:57352->127.0.0.1:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>127.0.0.1:57352->127.0.0.1:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[2182473]) 
+fcntl fd=10(<4t>127.0.0.1:57352->127.0.0.1:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BC000 vm_size=383144 vm_rss=9000 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BA000 vm_size=383152 vm_rss=9000 vm_swap=0 
+read fd=10(<4t>127.0.0.1:57352->127.0.0.1:80) size=8000 
+read res=96 data=OPTIONS * HTTP/1.0..User-Agent: Apache/2.4.25 (Debian) PHP/7.2.1 (internal dummy 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B8000 vm_size=383160 vm_rss=9000 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B6000 vm_size=383168 vm_rss=9000 vm_swap=0 
+writev fd=10(<4t>127.0.0.1:57352->127.0.0.1:80) size=126 
+writev res=126 data=HTTP/1.1 200 OK..Date: Thu, 10 Aug 2023 01:54:06 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[2182472]) size=139 
+write res=139 data=127.0.0.1 - - [10/Aug/2023:01:54:06 +0000] "OPTIONS * HTTP/1.0" 200 126 "-" "Apa 
+times 
+times 
+shutdown fd=10(<4t>127.0.0.1:57352->127.0.0.1:80) how=1(SHUT_WR) 
+shutdown res=-107(ENOTCONN) 
+close fd=10(<4t>127.0.0.1:57352->127.0.0.1:80) 
+close res=0 
+read fd=4(<p>pipe:[2185612]) size=1 
+read res=1 data=! 
+close fd=9 
+close res=0 
+munmap addr=7F57F845F000 length=134217728 
+munmap res=0 vm_size=252096 vm_rss=11096 vm_swap=0 
+close fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) 
+close res=0 
+munmap addr=7F580045F000 length=2243784 
+munmap res=0 vm_size=249904 vm_rss=11208 vm_swap=0 
+munmap addr=7F5800B21000 length=2517856 
+munmap res=0 vm_size=247444 vm_rss=11228 vm_swap=0 
+munmap addr=7F58008EE000 length=2301968 
+munmap res=0 vm_size=245192 vm_rss=11200 vm_swap=0 
+munmap addr=7F5800683000 length=2531352 
+munmap res=0 vm_size=242716 vm_rss=11172 vm_swap=0 
+munmap addr=7F5800D88000 length=2584984 
+munmap res=0 vm_size=240188 vm_rss=12864 vm_swap=0 
+munmap addr=7F580F86C000 length=299008 
+munmap res=0 vm_size=239896 vm_rss=12676 vm_swap=0 
+munmap addr=7F5801000000 length=2097152 
+munmap res=0 vm_size=237848 vm_rss=10628 vm_swap=0 
+munmap addr=7F580F8DA000 length=323584 
+munmap res=0 vm_size=237532 vm_rss=10624 vm_swap=0 
+munmap addr=7F580F8C4000 length=8192 
+munmap res=0 vm_size=237524 vm_rss=10620 vm_swap=0 
+munmap addr=7F580F8BE000 length=8192 
+munmap res=0 vm_size=237516 vm_rss=10616 vm_swap=0 
+munmap addr=7F580F8C2000 length=8192 
+munmap res=0 vm_size=237508 vm_rss=10612 vm_swap=0 
+munmap addr=7F580F8C0000 length=8192 
+munmap res=0 vm_size=237500 vm_rss=10608 vm_swap=0 
+munmap addr=7F580F8BA000 length=8192 
+munmap res=0 vm_size=237492 vm_rss=10604 vm_swap=0 
+munmap addr=7F580F8B6000 length=8192 
+munmap res=0 vm_size=237484 vm_rss=10600 vm_swap=0 
+munmap addr=7F580F8BC000 length=8192 
+munmap res=0 vm_size=237476 vm_rss=10592 vm_swap=0 
+munmap addr=7F580F8B8000 length=8192 
+munmap res=0 vm_size=237468 vm_rss=10588 vm_swap=0 
+close fd=5(<p>pipe:[2185612]) 
+close res=0 
+close fd=4(<p>pipe:[2185612]) 
+close res=0 
+futex addr=7F58096578EC op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+exit_group 
+accept fd=10(<4t>127.0.0.1:57360->127.0.0.1:80) tuple=127.0.0.1:57360->127.0.0.1:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>127.0.0.1:57360->127.0.0.1:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[2182473]) 
+fcntl fd=10(<4t>127.0.0.1:57360->127.0.0.1:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BC000 vm_size=383144 vm_rss=9000 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BA000 vm_size=383152 vm_rss=9000 vm_swap=0 
+read fd=10(<4t>127.0.0.1:57360->127.0.0.1:80) size=8000 
+read res=96 data=OPTIONS * HTTP/1.0..User-Agent: Apache/2.4.25 (Debian) PHP/7.2.1 (internal dummy 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B8000 vm_size=383160 vm_rss=9000 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B6000 vm_size=383168 vm_rss=9000 vm_swap=0 
+writev fd=10(<4t>127.0.0.1:57360->127.0.0.1:80) size=126 
+writev res=126 data=HTTP/1.1 200 OK..Date: Thu, 10 Aug 2023 01:54:07 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[2182472]) size=139 
+write res=139 data=127.0.0.1 - - [10/Aug/2023:01:54:07 +0000] "OPTIONS * HTTP/1.0" 200 126 "-" "Apa 
+times 
+times 
+shutdown fd=10(<4t>127.0.0.1:57360->127.0.0.1:80) how=1(SHUT_WR) 
+shutdown res=-107(ENOTCONN) 
+close fd=10(<4t>127.0.0.1:57360->127.0.0.1:80) 
+close res=0 
+read fd=4(<p>pipe:[2185612]) size=1 
+read res=1 data=! 
+close fd=9 
+close res=0 
+munmap addr=7F57F845F000 length=134217728 
+munmap res=0 vm_size=252096 vm_rss=11096 vm_swap=0 
+close fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) 
+close res=0 
+munmap addr=7F580045F000 length=2243784 
+munmap res=0 vm_size=249904 vm_rss=11208 vm_swap=0 
+munmap addr=7F5800B21000 length=2517856 
+munmap res=0 vm_size=247444 vm_rss=11228 vm_swap=0 
+munmap addr=7F58008EE000 length=2301968 
+munmap res=0 vm_size=245192 vm_rss=11200 vm_swap=0 
+munmap addr=7F5800683000 length=2531352 
+munmap res=0 vm_size=242716 vm_rss=11172 vm_swap=0 
+munmap addr=7F5800D88000 length=2584984 
+munmap res=0 vm_size=240188 vm_rss=12864 vm_swap=0 
+munmap addr=7F580F86C000 length=299008 
+munmap res=0 vm_size=239896 vm_rss=12676 vm_swap=0 
+munmap addr=7F5801000000 length=2097152 
+munmap res=0 vm_size=237848 vm_rss=10628 vm_swap=0 
+munmap addr=7F580F8DA000 length=323584 
+munmap res=0 vm_size=237532 vm_rss=10624 vm_swap=0 
+munmap addr=7F580F8C4000 length=8192 
+munmap res=0 vm_size=237524 vm_rss=10620 vm_swap=0 
+munmap addr=7F580F8BE000 length=8192 
+munmap res=0 vm_size=237516 vm_rss=10616 vm_swap=0 
+munmap addr=7F580F8C2000 length=8192 
+munmap res=0 vm_size=237508 vm_rss=10612 vm_swap=0 
+munmap addr=7F580F8C0000 length=8192 
+munmap res=0 vm_size=237500 vm_rss=10608 vm_swap=0 
+munmap addr=7F580F8BA000 length=8192 
+munmap res=0 vm_size=237492 vm_rss=10604 vm_swap=0 
+munmap addr=7F580F8B6000 length=8192 
+munmap res=0 vm_size=237484 vm_rss=10600 vm_swap=0 
+munmap addr=7F580F8BC000 length=8192 
+munmap res=0 vm_size=237476 vm_rss=10592 vm_swap=0 
+munmap addr=7F580F8B8000 length=8192 
+munmap res=0 vm_size=237468 vm_rss=10588 vm_swap=0 
+close fd=5(<p>pipe:[2185612]) 
+close res=0 
+close fd=4(<p>pipe:[2185612]) 
+close res=0 
+futex addr=7F58096578EC op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+exit_group 
+accept fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) tuple=172.18.0.1:33298->172.18.0.3:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[2182473]) 
+fcntl fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BC000 vm_size=383144 vm_rss=9000 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8BA000 vm_size=383152 vm_rss=9000 vm_swap=0 
+read fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) size=8000 
+read res=412 data=POST /wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php H 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B8000 vm_size=383160 vm_rss=9000 vm_swap=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=234 data=# BEGIN WordPress.<IfModule mod_rewrite.c>.RewriteEngine On.RewriteBase /.Rewrit 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/really-simple-guest-post/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F8B6000 vm_size=383168 vm_rss=9000 vm_swap=0 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php 
+brk addr=564E97A81000 
+brk res=564E97A81000 vm_size=383328 vm_rss=10276 vm_swap=0 
+brk addr=564E97AA2000 
+brk res=564E97AA2000 vm_size=383460 vm_rss=11488 vm_swap=0 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+setitimer 
+setitimer 
+rt_sigaction 
+rt_sigaction 
+rt_sigprocmask 
+rt_sigprocmask 
+mmap addr=0 length=65536 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F85C000 vm_size=383524 vm_rss=12316 vm_swap=0 
+getcwd 
+getcwd res=14 path=/var/www/html 
+chdir 
+chdir res=0 path=/var/www/html/wp-content/plugins/really-simple-guest-post 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins/really-simple-guest-post 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins 
+lstat 
+lstat res=0 path=/var/www/html/wp-content 
+lstat 
+lstat res=0 path=/var/www/html 
+lstat 
+lstat res=0 path=/var/www 
+lstat 
+lstat res=0 path=/var 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php) name=/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php) 
+fstat res=0 
+fstat fd=11(<f>/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php) 
+fstat res=0 
+fstat fd=11(<f>/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php) 
+fstat res=0 
+mmap addr=0 length=1502 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php) offset=0 
+mmap res=7F580F8B5000 vm_size=383528 vm_rss=12316 vm_swap=0 
+fcntl fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php 
+fcntl fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) cmd=9(F_SETLKW) 
+fcntl res=0(<f>/dev/null) 
+fcntl fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+munmap addr=7F580F8B5000 length=1502 
+munmap res=0 vm_size=383524 vm_rss=15112 vm_swap=0 
+close fd=11(<f>/var/www/html/wp-content/plugins/really-simple-guest-post/simple-guest-post-submit.php) 
+close res=0 
+lstat 
+lstat res=0 path=/etc/passwd 
+lstat 
+lstat res=0 path=/etc 
+open 
+open fd=11(<f>/etc/passwd) name=/etc/passwd flags=1(O_RDONLY) mode=0 dev=62 
+fstat fd=11(<f>/etc/passwd) 
+fstat res=0 
+fstat fd=11(<f>/etc/passwd) 
+fstat res=0 
+fstat fd=11(<f>/etc/passwd) 
+fstat res=0 
+mmap addr=0 length=919 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/etc/passwd) offset=0 
+mmap res=7F580F8B5000 vm_size=383528 vm_rss=15112 vm_swap=0 
+stat 
+stat res=0 path=/etc/passwd 
+fcntl fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) cmd=9(F_SETLKW) 
+fcntl res=0(<f>/dev/null) 
+fcntl fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+munmap addr=7F580F8B5000 length=919 
+munmap res=0 vm_size=383524 vm_rss=15424 vm_swap=0 
+close fd=11(<f>/etc/passwd) 
+close res=0 
+chdir 
+chdir res=0 path=/var/www/html 
+setitimer 
+setitimer 
+fcntl fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+setitimer 
+setitimer 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F85A000 vm_size=383532 vm_rss=15424 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F858000 vm_size=383540 vm_rss=15424 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7F580F856000 vm_size=383548 vm_rss=15424 vm_swap=0 
+read fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) size=1452 
+writev res=1452 data=HTTP/1.1 200 OK..Date: Thu, 10 Aug 2023 01:54:17 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[2182472]) size=161 
+write res=161 data=172.18.0.1 - - [10/Aug/2023:01:54:17 +0000] "POST /wp-content/plugins/really-sim 
+times 
+times 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) size=8000 
+read res=0 data= 
+shutdown fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) how=1(SHUT_WR) 
+shutdown res=0 
+poll fds=10:41 timeout=2000 
+poll res=1 fds=10:421 
+read fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) size=512 
+read res=0 data= 
+close fd=10(<4t>172.18.0.1:33298->172.18.0.3:80) 
+close res=0 
+read fd=4(<p>pipe:[2185612]) size=1 
+read res=-11(EAGAIN) data= 
+accept flags=0 
+accept fd=-512(ERESTARTSYS) tuple=NULL queuepct=0 queuelen=0 queuemax=511 
+close fd=9 
+close res=0 
+accept fd=-512(ERESTARTSYS) tuple=NULL queuepct=0 queuelen=0 queuemax=511 
+close fd=9 
+close res=0 
+munmap addr=7F57F845F000 length=134217728 
+munmap res=0 vm_size=252292 vm_rss=11352 vm_swap=0 
+close fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) 
+close res=0 
+munmap addr=7F580045F000 length=2243784 
+munmap res=0 vm_size=250100 vm_rss=11464 vm_swap=0 
+munmap addr=7F5800B21000 length=2517856 
+munmap res=0 vm_size=247640 vm_rss=11484 vm_swap=0 
+munmap addr=7F58008EE000 length=2301968 
+munmap res=0 vm_size=245388 vm_rss=11456 vm_swap=0 
+munmap addr=7F5800683000 length=2531352 
+munmap res=0 vm_size=242912 vm_rss=11428 vm_swap=0 
+munmap addr=7F57F845F000 length=134217728 
+munmap res=0 vm_size=252064 vm_rss=10896 vm_swap=0 
+close fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) 
+close res=0 
+munmap addr=7F580045F000 length=2243784 
+munmap res=0 vm_size=249872 vm_rss=11008 vm_swap=0 
+munmap addr=7F5800B21000 length=2517856 
+munmap res=0 vm_size=247412 vm_rss=11028 vm_swap=0 
+munmap addr=7F58008EE000 length=2301968 
+munmap res=0 vm_size=245160 vm_rss=11000 vm_swap=0 
+munmap addr=7F5800683000 length=2531352 
+munmap res=0 vm_size=242684 vm_rss=10972 vm_swap=0 
+accept fd=-512(ERESTARTSYS) tuple=NULL queuepct=0 queuelen=0 queuemax=511 
+close fd=9 
+close res=0 
+munmap addr=7F5800D88000 length=2584984 
+munmap res=0 vm_size=240384 vm_rss=13120 vm_swap=0 
+accept fd=-512(ERESTARTSYS) tuple=NULL queuepct=0 queuelen=0 queuemax=511 
+close fd=9 
+close res=0 
+munmap addr=7F580F86C000 length=299008 
+munmap res=0 vm_size=240092 vm_rss=12932 vm_swap=0 
+munmap addr=7F5801000000 length=2097152 
+munmap res=0 vm_size=238044 vm_rss=10884 vm_swap=0 
+munmap addr=7F580F8DA000 length=323584 
+munmap res=0 vm_size=237728 vm_rss=10880 vm_swap=0 
+munmap addr=7F580F8C4000 length=8192 
+munmap res=0 vm_size=237720 vm_rss=10876 vm_swap=0 
+munmap addr=7F580F8BE000 length=8192 
+munmap res=0 vm_size=237712 vm_rss=10872 vm_swap=0 
+munmap addr=7F580F8C2000 length=8192 
+munmap res=0 vm_size=237704 vm_rss=10868 vm_swap=0 
+munmap addr=7F580F8C0000 length=8192 
+munmap res=0 vm_size=237696 vm_rss=10864 vm_swap=0 
+munmap addr=7F580F864000 length=8192 
+munmap res=0 vm_size=237688 vm_rss=10860 vm_swap=0 
+munmap addr=7F580F8B8000 length=8192 
+munmap res=0 vm_size=237680 vm_rss=10852 vm_swap=0 
+munmap addr=7F580F8B6000 length=8192 
+munmap res=0 vm_size=237672 vm_rss=10844 vm_swap=0 
+munmap addr=7F580F868000 length=8192 
+munmap res=0 vm_size=237664 vm_rss=10836 vm_swap=0 
+munmap addr=7F580F8BA000 length=8192 
+munmap res=0 vm_size=237656 vm_rss=10828 vm_swap=0 
+munmap addr=7F580F8BC000 length=8192 
+munmap res=0 vm_size=237648 vm_rss=10820 vm_swap=0 
+munmap addr=7F580F86A000 length=8192 
+munmap res=0 vm_size=237640 vm_rss=10812 vm_swap=0 
+munmap addr=7F580F859000 length=8192 
+munmap res=0 vm_size=237632 vm_rss=10804 vm_swap=0 
+munmap addr=7F580F866000 length=8192 
+munmap res=0 vm_size=237624 vm_rss=10800 vm_swap=0 
+close fd=5(<p>pipe:[2185612]) 
+close res=0 
+close fd=4(<p>pipe:[2185612]) 
+close res=0 
+munmap addr=7F5800D88000 length=2584984 
+munmap res=0 vm_size=240156 vm_rss=12604 vm_swap=0 
+munmap addr=7F580F86C000 length=299008 
+munmap res=0 vm_size=239864 vm_rss=12416 vm_swap=0 
+munmap addr=7F5801000000 length=2097152 
+munmap res=0 vm_size=237816 vm_rss=10368 vm_swap=0 
+munmap addr=7F580F8DA000 length=323584 
+munmap res=0 vm_size=237500 vm_rss=10364 vm_swap=0 
+munmap addr=7F580F8C4000 length=8192 
+munmap res=0 vm_size=237492 vm_rss=10360 vm_swap=0 
+munmap addr=7F580F8BE000 length=8192 
+munmap res=0 vm_size=237484 vm_rss=10356 vm_swap=0 
+munmap addr=7F580F8C2000 length=8192 
+munmap res=0 vm_size=237476 vm_rss=10352 vm_swap=0 
+munmap addr=7F580F8C0000 length=8192 
+munmap res=0 vm_size=237468 vm_rss=10348 vm_swap=0 
+close fd=5(<p>pipe:[2185612]) 
+close res=0 
+close fd=4(<p>pipe:[2185612]) 
+close res=0 
+munmap addr=7F57F845F000 length=134217728 
+munmap res=0 vm_size=252064 vm_rss=10896 vm_swap=0 
+close fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) 
+close res=0 
+futex addr=7F58096578EC op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+munmap addr=7F580045F000 length=2243784 
+munmap res=0 vm_size=249872 vm_rss=11008 vm_swap=0 
+munmap addr=7F5800B21000 length=2517856 
+munmap res=0 vm_size=247412 vm_rss=11028 vm_swap=0 
+munmap addr=7F58008EE000 length=2301968 
+munmap res=0 vm_size=245160 vm_rss=11000 vm_swap=0 
+munmap addr=7F5800683000 length=2531352 
+munmap res=0 vm_size=242684 vm_rss=10972 vm_swap=0 
+futex addr=7F58096578EC op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+exit_group 
+accept fd=-512(ERESTARTSYS) tuple=NULL queuepct=0 queuelen=0 queuemax=511 
+close fd=9 
+close res=0 
+munmap addr=7F57F845F000 length=134217728 
+munmap res=0 vm_size=252476 vm_rss=13336 vm_swap=0 
+close fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) 
+close res=0 
+munmap addr=7F580045F000 length=2243784 
+munmap res=0 vm_size=250284 vm_rss=13280 vm_swap=0 
+munmap addr=7F5800B21000 length=2517856 
+munmap res=0 vm_size=247824 vm_rss=13300 vm_swap=0 
+munmap addr=7F58008EE000 length=2301968 
+munmap res=0 vm_size=245572 vm_rss=13272 vm_swap=0 
+munmap addr=7F5800683000 length=2531352 
+munmap res=0 vm_size=243096 vm_rss=13244 vm_swap=0 
+munmap addr=7F580F85C000 length=65536 
+munmap res=0 vm_size=243032 vm_rss=14124 vm_swap=0 
+brk addr=564E97A6F000 
+brk res=564E97A6F000 vm_size=242828 vm_rss=14024 vm_swap=0 
+munmap addr=7F5800D88000 length=2584984 
+munmap res=0 vm_size=240300 vm_rss=13584 vm_swap=0 
+munmap addr=7F580F86C000 length=299008 
+munmap res=0 vm_size=240008 vm_rss=13396 vm_swap=0 
+munmap addr=7F5801000000 length=2097152 
+munmap res=0 vm_size=237960 vm_rss=11348 vm_swap=0 
+munmap addr=7F580F8DA000 length=323584 
+munmap res=0 vm_size=237644 vm_rss=11344 vm_swap=0 
+munmap addr=7F580F8C4000 length=8192 
+munmap res=0 vm_size=237636 vm_rss=11340 vm_swap=0 
+munmap addr=7F580F8BE000 length=8192 
+munmap res=0 vm_size=237628 vm_rss=11336 vm_swap=0 
+munmap addr=7F580F8C2000 length=8192 
+munmap res=0 vm_size=237620 vm_rss=11332 vm_swap=0 
+munmap addr=7F580F8C0000 length=8192 
+munmap res=0 vm_size=237612 vm_rss=11328 vm_swap=0 
+munmap addr=7F580F858000 length=8192 
+munmap res=0 vm_size=237604 vm_rss=11324 vm_swap=0 
+munmap addr=7F580F8B8000 length=8192 
+munmap res=0 vm_size=237596 vm_rss=11316 vm_swap=0 
+munmap addr=7F580F8B6000 length=8192 
+munmap res=0 vm_size=237588 vm_rss=11308 vm_swap=0 
+munmap addr=7F580F8BC000 length=8192 
+munmap res=0 vm_size=237580 vm_rss=11300 vm_swap=0 
+munmap addr=7F580F8BA000 length=8192 
+munmap res=0 vm_size=237572 vm_rss=11296 vm_swap=0 
+munmap addr=7F580F85A000 length=8192 
+munmap res=0 vm_size=237564 vm_rss=11292 vm_swap=0 
+munmap addr=7F580F856000 length=8192 
+munmap res=0 vm_size=237556 vm_rss=11288 vm_swap=0 
+close fd=5(<p>pipe:[2185612]) 
+close res=0 
+close fd=4(<p>pipe:[2185612]) 
+close res=0 
+futex addr=7F58096578EC op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+exit_group 
+munmap addr=7F57F845F000 length=134217728 
+munmap res=0 vm_size=252064 vm_rss=10896 vm_swap=0 
+close fd=8(<f>/tmp/.ZendSem.JzPKZk (deleted)) 
+close res=0 
+munmap addr=7F580045F000 length=2243784 
+munmap res=0 vm_size=249872 vm_rss=11008 vm_swap=0 
+munmap addr=7F5800B21000 length=2517856 
+munmap res=0 vm_size=247412 vm_rss=11028 vm_swap=0 
+munmap addr=7F58008EE000 length=2301968 
+munmap res=0 vm_size=245160 vm_rss=11000 vm_swap=0 
+munmap addr=7F5800683000 length=2531352 
+munmap res=0 vm_size=242684 vm_rss=10972 vm_swap=0 
+exit_group 
+munmap addr=7F5800D88000 length=2584984 
+munmap res=0 vm_size=240156 vm_rss=12668 vm_swap=0 
+munmap addr=7F580F86C000 length=299008 
+munmap res=0 vm_size=239864 vm_rss=12480 vm_swap=0 
+munmap addr=7F5801000000 length=2097152 
+munmap res=0 vm_size=237816 vm_rss=10432 vm_swap=0 
+munmap addr=7F580F8DA000 length=323584 
+munmap res=0 vm_size=237500 vm_rss=10428 vm_swap=0 
+munmap addr=7F580F8C4000 length=8192 
+munmap res=0 vm_size=237492 vm_rss=10424 vm_swap=0 
+munmap addr=7F580F8BE000 length=8192 
+munmap res=0 vm_size=237484 vm_rss=10420 vm_swap=0 
+munmap addr=7F580F8C2000 length=8192 
+munmap res=0 vm_size=237476 vm_rss=10416 vm_swap=0 
+munmap addr=7F580F8C0000 length=8192 
+munmap res=0 vm_size=237468 vm_rss=10412 vm_swap=0 
+close fd=5(<p>pipe:[2185612]) 
+close res=0 
+close fd=4(<p>pipe:[2185612]) 
+close res=0 
+futex addr=7F58096578EC op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+munmap addr=7F5800D88000 length=2584984 
+munmap res=0 vm_size=240156 vm_rss=12668 vm_swap=0 
+munmap addr=7F580F86C000 length=299008 
+munmap res=0 vm_size=239864 vm_rss=12480 vm_swap=0 
+munmap addr=7F5801000000 length=2097152 
+munmap res=0 vm_size=237816 vm_rss=10432 vm_swap=0 
+munmap addr=7F580F8DA000 length=323584 
+munmap res=0 vm_size=237500 vm_rss=10428 vm_swap=0 
+munmap addr=7F580F8C4000 length=8192 
+munmap res=0 vm_size=237492 vm_rss=10424 vm_swap=0 
+munmap addr=7F580F8BE000 length=8192 
+munmap res=0 vm_size=237484 vm_rss=10420 vm_swap=0 
+munmap addr=7F580F8C2000 length=8192 
+munmap res=0 vm_size=237476 vm_rss=10416 vm_swap=0 
+munmap addr=7F580F8C0000 length=8192 
+munmap res=0 vm_size=237468 vm_rss=10412 vm_swap=0 
+close fd=5(<p>pipe:[2185612]) 
+close res=0 
+close fd=4(<p>pipe:[2185612]) 
+close res=0 
+futex addr=7F58096578EC op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+exit_group 
+exit_group 

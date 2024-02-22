@@ -1,0 +1,2344 @@
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=482463(apache2) pid=477215(apache2) ptid=476837(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=0 vm_size=406876 vm_rss=56260 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-16ae8d7cd5fb26f69d2b3694871b56f03e50ad52cedd860b3... flags=578861571(CLONE_FILES|CLONE_FS|CLONE_PARENT_SETTID|CLONE_SIGHAND|CLONE_SYSVSEM|CLONE_THREAD|CLONE_VM|CLONE_CHILD_CLEARTID|CLONE_SETTLS) uid=33 gid=33 vtid=85 vpid=70 
+set_robust_list 
+set_robust_list 
+getpid 
+getpid 
+mmap addr=0 length=134217728 prot=0(PROT_NONE) flags=74(MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE) fd=-1(EPERM) offset=0 
+mmap res=7FEB4F9FF000 vm_size=537948 vm_rss=56260 vm_swap=0 
+munmap addr=7FEB4F9FF000 length=6295552 
+munmap res=0 vm_size=531800 vm_rss=56260 vm_swap=0 
+munmap addr=7FEB54000000 length=60813312 
+munmap res=0 vm_size=472412 vm_rss=56260 vm_swap=0 
+mprotect 
+mprotect 
+open 
+open fd=12(<f>/etc/resolv.conf) name=/etc/resolv.conf flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=12(<f>/etc/resolv.conf) 
+fstat res=0 
+read fd=12(<f>/etc/resolv.conf) size=1536 
+read res=53 data=nameserver 127.0.0.11.options edns0 trust-ad ndots:0. 
+read fd=12(<f>/etc/resolv.conf) size=1536 
+read res=0 data= 
+close fd=12(<f>/etc/resolv.conf) 
+close res=0 
+uname 
+uname 
+open 
+open fd=12(<f>/etc/hosts) name=/etc/hosts flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=12(<f>/etc/hosts) 
+fstat res=0 
+read fd=12(<f>/etc/hosts) size=512 
+read res=174 data=127.0.0.1.localhost.::1.localhost ip6-localhost ip6-loopback.fe00::0.ip6-localne 
+read fd=12(<f>/etc/hosts) size=512 
+read res=0 data= 
+close fd=12(<f>/etc/hosts) 
+close res=0 
+stat 
+stat res=0 path=/etc/resolv.conf 
+socket domain=2(AF_INET) type=2050 proto=0 
+socket fd=12(<4>) 
+connect fd=12(<4>) 
+connect res=0 tuple=127.0.0.1:37234->127.0.0.11:53 
+poll fds=12:44 timeout=0 
+poll res=1 fds=12:44 
+sendmmsg 
+sendmmsg 
+poll fds=12:41 timeout=5000 
+poll res=1 fds=12:41 
+ioctl fd=12(<4u>127.0.0.1:37234->127.0.0.11:53) request=541B argument=7FEB581FD088 
+ioctl res=0 
+recvfrom fd=12(<4u>127.0.0.1:37234->127.0.0.11:53) size=2048 
+recvfrom res=97 data=v............api.wordpress.org................'.ns1...hostmaster...3..... ... .. tuple=127.0.0.11:53->127.0.0.1:37234 
+poll fds=12:41 timeout=4985 
+poll res=1 fds=12:41 
+ioctl fd=12(<4u>127.0.0.1:37234->127.0.0.11:53) request=541B argument=7FEB581FE6CC 
+ioctl res=0 
+recvfrom fd=12(<4u>127.0.0.1:37234->127.0.0.11:53) size=65536 
+recvfrom res=62 data=.w...........api.wordpress.org..............,........)........ tuple=127.0.0.11:53->127.0.0.1:37234 
+close fd=12(<4u>127.0.0.1:37234->127.0.0.11:53) 
+close res=0 
+madvise 
+madvise 
+exit 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=482543(apache2) pid=477215(apache2) ptid=476837(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=0 vm_size=473652 vm_rss=59008 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-16ae8d7cd5fb26f69d2b3694871b56f03e50ad52cedd860b3... flags=578861571(CLONE_FILES|CLONE_FS|CLONE_PARENT_SETTID|CLONE_SIGHAND|CLONE_SYSVSEM|CLONE_THREAD|CLONE_VM|CLONE_CHILD_CLEARTID|CLONE_SETTLS) uid=33 gid=33 vtid=86 vpid=70 
+set_robust_list 
+set_robust_list 
+getpid 
+getpid 
+open 
+open fd=12(<f>/etc/resolv.conf) name=/etc/resolv.conf flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=12(<f>/etc/resolv.conf) 
+fstat res=0 
+read fd=12(<f>/etc/resolv.conf) size=1536 
+read res=53 data=nameserver 127.0.0.11.options edns0 trust-ad ndots:0. 
+read fd=12(<f>/etc/resolv.conf) size=1536 
+read res=0 data= 
+close fd=12(<f>/etc/resolv.conf) 
+close res=0 
+uname 
+uname 
+open 
+open fd=12(<f>/etc/hosts) name=/etc/hosts flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=12(<f>/etc/hosts) 
+fstat res=0 
+read fd=12(<f>/etc/hosts) size=512 
+read res=174 data=127.0.0.1.localhost.::1.localhost ip6-localhost ip6-loopback.fe00::0.ip6-localne 
+read fd=12(<f>/etc/hosts) size=512 
+read res=0 data= 
+close fd=12(<f>/etc/hosts) 
+close res=0 
+stat 
+stat res=0 path=/etc/resolv.conf 
+socket domain=2(AF_INET) type=2050 proto=0 
+socket fd=12(<4>) 
+connect fd=12(<4>) 
+connect res=0 tuple=127.0.0.1:34626->127.0.0.11:53 
+poll fds=12:44 timeout=0 
+poll res=1 fds=12:44 
+sendmmsg 
+sendmmsg 
+poll fds=12:41 timeout=5000 
+poll res=1 fds=12:41 
+ioctl fd=12(<4u>127.0.0.1:34626->127.0.0.11:53) request=541B argument=7FEB581FD088 
+ioctl res=0 
+recvfrom fd=12(<4u>127.0.0.1:34626->127.0.0.11:53) size=2048 
+recvfrom res=60 data=:............basixonline.net.............. ........)........ tuple=127.0.0.11:53->127.0.0.1:34626 
+poll fds=12:41 timeout=4525 
+poll res=1 fds=12:41 
+ioctl fd=12(<4u>127.0.0.1:34626->127.0.0.11:53) request=541B argument=7FEB581FE6CC 
+ioctl res=0 
+recvfrom fd=12(<4u>127.0.0.1:34626->127.0.0.11:53) size=65536 
+recvfrom res=119 data=.............basixonline.net................?.ns1.host-h...postmaster.your-serve tuple=127.0.0.11:53->127.0.0.1:34626 
+close fd=12(<4u>127.0.0.1:34626->127.0.0.11:53) 
+close res=0 
+madvise 
+madvise 
+exit 
+accept fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) tuple=172.18.0.1:59326->172.18.0.3:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[668225]) 
+fcntl fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C7000 vm_size=383144 vm_rss=9044 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C5000 vm_size=383152 vm_rss=9044 vm_swap=0 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=1061 data=GET /wp-content/plugins/mail-masta/lib/custom.js?ver=4.9.2 HTTP/1.1..Host: local 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/custom.js 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C3000 vm_size=383160 vm_rss=9044 vm_swap=0 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/custom.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C1000 vm_size=383168 vm_rss=9044 vm_swap=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/custom.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/custom.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=5005 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/custom.js) offset=0 
+mmap res=7FEB70375000 vm_size=383176 vm_rss=9044 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70373000 vm_size=383184 vm_rss=9044 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383340 vm_rss=9044 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383532 vm_rss=9044 vm_swap=0 
+munmap addr=7FEB70375000 length=5005 
+munmap res=0 vm_size=383524 vm_rss=10240 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70375000 vm_size=383532 vm_rss=10240 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383340 vm_rss=10160 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70371000 vm_size=383348 vm_rss=10160 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB7036F000 vm_size=383356 vm_rss=10160 vm_swap=0 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=1670 
+writev res=1670 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:19:52 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=257 
+write res=257 data=172.18.0.1 - - [08/Aug/2023:01:19:52 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/custom.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=1081 data=GET /wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js?ver=4.9.2 H 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=10810 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js) offset=0 
+mmap res=7FEB7036C000 vm_size=383368 vm_rss=10160 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383560 vm_rss=10160 vm_swap=0 
+munmap addr=7FEB7036C000 length=10810 
+munmap res=0 vm_size=383548 vm_rss=10300 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383356 vm_rss=10216 vm_swap=0 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=2752 
+writev res=2752 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:19:52 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=277 
+write res=277 data=172.18.0.1 - - [08/Aug/2023:01:19:52 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=1079 data=GET /wp-content/plugins/mail-masta/lib/jquery.selectbox-0.2.min.js?ver=4.9.2 HTT 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.selectbox-0.2.min.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.selectbox-0.2.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.selectbox-0.2.min.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.selectbox-0.2.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=9296 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.selectbox-0.2.min.js) offset=0 
+mmap res=7FEB7036C000 vm_size=383368 vm_rss=10216 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383560 vm_rss=10216 vm_swap=0 
+munmap addr=7FEB7036C000 length=9296 
+munmap res=0 vm_size=383548 vm_rss=10304 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383356 vm_rss=10220 vm_swap=0 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=3130 
+writev res=3130 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:19:52 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=275 
+write res=275 data=172.18.0.1 - - [08/Aug/2023:01:19:52 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.selectbox-0.2.min.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=884 data=GET /wp-includes/js/jquery/ui/button.min.js?ver=1.11.4 HTTP/1.1..Host: localhost 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/button.min.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/ui/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-includes/js/jquery/ui/button.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/button.min.js) name=/var/www/html/wp-includes/js/jquery/ui/button.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=7236 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/button.min.js) offset=0 
+mmap res=7FEB7036D000 vm_size=383364 vm_rss=10220 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383556 vm_rss=10220 vm_swap=0 
+munmap addr=7FEB7036D000 length=7236 
+munmap res=0 vm_size=383548 vm_rss=10308 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383356 vm_rss=10224 vm_swap=0 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=2433 
+writev res=2433 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:19:52 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=253 
+write res=253 data=172.18.0.1 - - [08/Aug/2023:01:19:52 +0000] "GET /wp-includes/js/jquery/ui/butto 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/button.min.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=1081 data=GET /wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js?ver=4.9.2 H 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=76503 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js) offset=0 
+mmap res=7FEB7035C000 vm_size=383432 vm_rss=10224 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383624 vm_rss=10224 vm_swap=0 
+munmap addr=7FEB7035C000 length=76503 
+munmap res=0 vm_size=383548 vm_rss=10416 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB7036D000 vm_size=383556 vm_rss=10416 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383364 vm_rss=10312 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB7036B000 vm_size=383372 vm_rss=10312 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=18096 
+writev res=18096 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:19:52 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=278 
+write res=278 data=172.18.0.1 - - [08/Aug/2023:01:19:52 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js) 
+close res=0 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+poll res=0 fds= 
+shutdown fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) how=1(SHUT_WR) 
+shutdown res=0 
+poll fds=10:41 timeout=2000 
+poll res=1 fds=10:421 
+read fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) size=512 
+read res=0 data= 
+close fd=10(<4t>172.18.0.1:59326->172.18.0.3:80) 
+close res=0 
+read fd=4(<p>pipe:[669184]) size=1 
+read res=-11(EAGAIN) data= 
+accept flags=0 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=482774(apache2) pid=477498(apache2) ptid=476837(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=0 vm_size=406872 vm_rss=55676 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-16ae8d7cd5fb26f69d2b3694871b56f03e50ad52cedd860b3... flags=578861571(CLONE_FILES|CLONE_FS|CLONE_PARENT_SETTID|CLONE_SIGHAND|CLONE_SYSVSEM|CLONE_THREAD|CLONE_VM|CLONE_CHILD_CLEARTID|CLONE_SETTLS) uid=33 gid=33 vtid=87 vpid=81 
+set_robust_list 
+set_robust_list 
+getpid 
+getpid 
+mmap addr=0 length=134217728 prot=0(PROT_NONE) flags=74(MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE) fd=-1(EPERM) offset=0 
+mmap res=7FEB4F9FF000 vm_size=537944 vm_rss=55676 vm_swap=0 
+munmap addr=7FEB4F9FF000 length=6295552 
+munmap res=0 vm_size=531796 vm_rss=55676 vm_swap=0 
+munmap addr=7FEB54000000 length=60813312 
+munmap res=0 vm_size=472408 vm_rss=55676 vm_swap=0 
+mprotect 
+mprotect 
+open 
+open fd=12(<f>/etc/resolv.conf) name=/etc/resolv.conf flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=12(<f>/etc/resolv.conf) 
+fstat res=0 
+read fd=12(<f>/etc/resolv.conf) size=1536 
+read res=53 data=nameserver 127.0.0.11.options edns0 trust-ad ndots:0. 
+read fd=12(<f>/etc/resolv.conf) size=1536 
+read res=0 data= 
+close fd=12(<f>/etc/resolv.conf) 
+close res=0 
+uname 
+uname 
+open 
+open fd=12(<f>/etc/hosts) name=/etc/hosts flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=12(<f>/etc/hosts) 
+fstat res=0 
+read fd=12(<f>/etc/hosts) size=512 
+read res=174 data=127.0.0.1.localhost.::1.localhost ip6-localhost ip6-loopback.fe00::0.ip6-localne 
+read fd=12(<f>/etc/hosts) size=512 
+read res=0 data= 
+close fd=12(<f>/etc/hosts) 
+close res=0 
+stat 
+stat res=0 path=/etc/resolv.conf 
+socket domain=2(AF_INET) type=2050 proto=0 
+socket fd=12(<4>) 
+connect fd=12(<4>) 
+connect res=0 tuple=127.0.0.1:41721->127.0.0.11:53 
+poll fds=12:44 timeout=0 
+poll res=1 fds=12:44 
+sendmmsg 
+sendmmsg 
+poll fds=12:41 timeout=5000 
+poll res=1 fds=12:41 
+ioctl fd=12(<4u>127.0.0.1:41721->127.0.0.11:53) request=541B argument=7FEB581FD088 
+ioctl res=0 
+recvfrom fd=12(<4u>127.0.0.1:41721->127.0.0.11:53) size=2048 
+recvfrom res=142 data={............email.us-east-1.amazonaws.com................H.ns-1757.awsdns-27.co tuple=127.0.0.11:53->127.0.0.1:41721 
+poll fds=12:41 timeout=4970 
+poll res=1 fds=12:41 
+ioctl fd=12(<4u>127.0.0.1:41721->127.0.0.11:53) request=541B argument=7FEB581FE6CC 
+ioctl res=0 
+recvfrom fd=12(<4u>127.0.0.1:41721->127.0.0.11:53) size=65536 
+recvfrom res=186 data=.N...........email.us-east-1.amazonaws.com..............<....y..........<..6.... tuple=127.0.0.11:53->127.0.0.1:41721 
+close fd=12(<4u>127.0.0.1:41721->127.0.0.11:53) 
+close res=0 
+open 
+open fd=12(<f>/etc/gai.conf) name=/etc/gai.conf flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=5C 
+fstat fd=12(<f>/etc/gai.conf) 
+fstat res=0 
+fstat fd=12(<f>/etc/gai.conf) 
+fstat res=0 
+read fd=12(<f>/etc/gai.conf) size=3072 
+read res=2584 data=# Configuration for getaddrinfo(3)..#.# So far only configuration for the destin 
+read fd=12(<f>/etc/gai.conf) size=3072 
+read res=0 data= 
+close fd=12(<f>/etc/gai.conf) 
+close res=0 
+futex addr=7FEB6F9EBEE4 op=129(FUTEX_PRIVATE_FLAG|FUTEX_WAKE) val=2147483647 
+futex res=0 
+socket domain=16(AF_ROUTE) type=3 proto=0 
+socket fd=12(<n>) 
+bind fd=12(<n>) 
+bind res=0 addr=NULL 
+getsockname 
+getsockname 
+sendto fd=12(<n>) size=20 tuple=NULL 
+sendto res=20 data=........A..d........ 
+recvmsg fd=12(<n>) 
+recvmsg res=164 size=164 data=L.......A..dQ...............................lo......................ZP#.ZP#.X... tuple=NULL 
+recvmsg fd=12(<n>) 
+recvmsg res=20 size=20 data=........A..dQ....... tuple=NULL 
+close fd=12(<n>) 
+close res=0 
+socket domain=2(AF_INET) type=2 proto=0 
+socket fd=12(<4>) 
+connect fd=12(<4>) 
+connect res=0 tuple=172.18.0.3:56506->3.219.121.207:443 
+getsockname 
+getsockname 
+connect fd=12(<4u>172.18.0.3:56506->3.219.121.207:443) 
+connect res=0 tuple=0.0.0.0:0->0.0.0.0:0 
+connect fd=12(<4u>0.0.0.0:0->0.0.0.0:0) 
+connect res=0 tuple=172.18.0.3:60920->54.159.144.161:443 
+getsockname 
+getsockname 
+connect fd=12(<4u>172.18.0.3:60920->54.159.144.161:443) 
+connect res=0 tuple=0.0.0.0:0->0.0.0.0:0 
+connect fd=12(<4u>0.0.0.0:0->0.0.0.0:0) 
+connect res=0 tuple=172.18.0.3:34136->54.83.201.2:443 
+getsockname 
+getsockname 
+connect fd=12(<4u>172.18.0.3:34136->54.83.201.2:443) 
+connect res=0 tuple=0.0.0.0:0->0.0.0.0:0 
+connect fd=12(<4u>0.0.0.0:0->0.0.0.0:0) 
+connect res=0 tuple=172.18.0.3:49256->100.24.181.228:443 
+getsockname 
+getsockname 
+connect fd=12(<4u>172.18.0.3:49256->100.24.181.228:443) 
+connect res=0 tuple=0.0.0.0:0->0.0.0.0:0 
+connect fd=12(<4u>0.0.0.0:0->0.0.0.0:0) 
+connect res=0 tuple=172.18.0.3:59425->3.88.124.57:443 
+getsockname 
+getsockname 
+connect fd=12(<4u>172.18.0.3:59425->3.88.124.57:443) 
+connect res=0 tuple=0.0.0.0:0->0.0.0.0:0 
+connect fd=12(<4u>0.0.0.0:0->0.0.0.0:0) 
+connect res=0 tuple=172.18.0.3:40263->54.82.12.23:443 
+getsockname 
+getsockname 
+connect fd=12(<4u>172.18.0.3:40263->54.82.12.23:443) 
+connect res=0 tuple=0.0.0.0:0->0.0.0.0:0 
+connect fd=12(<4u>0.0.0.0:0->0.0.0.0:0) 
+connect res=0 tuple=172.18.0.3:38261->52.205.221.19:443 
+getsockname 
+getsockname 
+connect fd=12(<4u>172.18.0.3:38261->52.205.221.19:443) 
+connect res=0 tuple=0.0.0.0:0->0.0.0.0:0 
+connect fd=12(<4u>0.0.0.0:0->0.0.0.0:0) 
+connect res=0 tuple=172.18.0.3:38840->54.162.68.218:443 
+getsockname 
+getsockname 
+close fd=12(<4u>172.18.0.3:38840->54.162.68.218:443) 
+close res=0 
+madvise 
+madvise 
+exit 
+accept fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) tuple=172.18.0.1:39172->172.18.0.3:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[668225]) 
+fcntl fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+read fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=8000 
+read res=897 data=GET /wp-includes/js/jquery/ui/button.min.js?ver=1.11.4 HTTP/1.1..Host: localhost 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/button.min.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/ui/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-includes/js/jquery/ui/button.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/button.min.js) name=/var/www/html/wp-includes/js/jquery/ui/button.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=7236 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/button.min.js) offset=0 
+mmap res=7FEB70369000 vm_size=383380 vm_rss=10312 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383572 vm_rss=10312 vm_swap=0 
+munmap addr=7FEB70369000 length=7236 
+munmap res=0 vm_size=383564 vm_rss=10404 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383372 vm_rss=10320 vm_swap=0 
+read fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=2434 
+writev res=2434 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:13 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=266 
+write res=266 data=172.18.0.1 - - [08/Aug/2023:01:20:13 +0000] "GET /wp-includes/js/jquery/ui/butto 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/button.min.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=8000 
+read res=1088 data=GET /wp-content/plugins/social-warfare/assets/js/script.min.js?ver=3.5.2 HTTP/1. 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/social-warfare/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/social-warfare/assets/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/social-warfare/assets/js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js) name=/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=11801 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js) offset=0 
+mmap res=7FEB70368000 vm_size=383384 vm_rss=10320 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383576 vm_rss=10320 vm_swap=0 
+munmap addr=7FEB70368000 length=11801 
+munmap res=0 vm_size=383564 vm_rss=10408 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383372 vm_rss=10320 vm_swap=0 
+read fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=3926 
+writev res=3926 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:13 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=284 
+write res=284 data=172.18.0.1 - - [08/Aug/2023:01:20:13 +0000] "GET /wp-content/plugins/social-warf 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=8000 
+read res=1092 data=GET /wp-content/plugins/mail-masta/lib/css/images/3.png HTTP/1.1..Host: localhos 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/css/images/3.png 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/css/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/css/images/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/css/images/3.png/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/css/images/3.png) name=/var/www/html/wp-content/plugins/mail-masta/lib/css/images/3.png flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=27945 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/css/images/3.png) offset=0 
+mmap res=7FEB70364000 vm_size=383400 vm_rss=10320 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=28232 
+writev res=28232 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:13 GMT..Server: Apache/2.4.25 (Deb 
+munmap addr=7FEB70364000 length=27945 
+munmap res=0 vm_size=383372 vm_rss=10320 vm_swap=0 
+write fd=7(<p>pipe:[668224]) size=268 
+write res=268 data=172.18.0.1 - - [08/Aug/2023:01:20:13 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/css/images/3.png) 
+close res=0 
+read fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=482929(apache2) pid=482929(apache2) ptid=476837(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=1 vm_size=383104 vm_rss=7640 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-16ae8d7cd5fb26f69d2b3694871b56f03e50ad52cedd860b3... flags=562036736(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID) uid=0 gid=0 vtid=88 vpid=88 
+set_robust_list 
+set_robust_list 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+getpid 
+getpid 
+getpid 
+getpid 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703CF000 vm_size=383112 vm_rss=7640 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703CD000 vm_size=383120 vm_rss=7640 vm_swap=0 
+geteuid 
+geteuid euid=0(root) 
+setgid gid=33(www-data) 
+setgid res=0 
+open 
+open fd=9(<f>/proc/sys/kernel/ngroups_max) name=/proc/sys/kernel/ngroups_max flags=1(O_RDONLY) mode=0 dev=5E 
+read fd=9(<f>/proc/sys/kernel/ngroups_max) size=31 
+read res=6 data=65536. 
+close fd=9(<f>/proc/sys/kernel/ngroups_max) 
+close res=0 
+open 
+open fd=9(<f>/etc/group) name=/etc/group flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=5C 
+lseek fd=9(<f>/etc/group) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+mmap addr=0 length=446 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=9(<f>/etc/group) offset=0 
+mmap res=7FEB703CC000 vm_size=383124 vm_rss=7640 vm_swap=0 
+lseek fd=9(<f>/etc/group) offset=446 whence=0(SEEK_SET) 
+lseek res=446 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+munmap addr=7FEB703CC000 length=446 
+munmap res=0 vm_size=383120 vm_rss=9044 vm_swap=0 
+close fd=9(<f>/etc/group) 
+close res=0 
+setgroups 
+setgroups 
+geteuid 
+geteuid euid=0(root) 
+setuid uid=33(www-data) 
+setuid res=0 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703CB000 vm_size=383128 vm_rss=9044 vm_swap=0 
+getpid 
+getpid 
+epoll_create1 
+epoll_create1 
+epoll_ctl 
+epoll_ctl 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C9000 vm_size=383136 vm_rss=9044 vm_swap=0 
+accept flags=0 
+poll res=0 fds= 
+shutdown fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) how=1(SHUT_WR) 
+shutdown res=0 
+poll fds=10:41 timeout=2000 
+poll res=1 fds=10:421 
+read fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) size=512 
+read res=0 data= 
+close fd=10(<4t>172.18.0.1:39172->172.18.0.3:80) 
+close res=0 
+read fd=4(<p>pipe:[669184]) size=1 
+read res=-11(EAGAIN) data= 
+accept flags=0 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=483256(apache2) pid=477498(apache2) ptid=476837(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=0 vm_size=473484 vm_rss=59284 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-16ae8d7cd5fb26f69d2b3694871b56f03e50ad52cedd860b3... flags=578861571(CLONE_FILES|CLONE_FS|CLONE_PARENT_SETTID|CLONE_SIGHAND|CLONE_SYSVSEM|CLONE_THREAD|CLONE_VM|CLONE_CHILD_CLEARTID|CLONE_SETTLS) uid=33 gid=33 vtid=89 vpid=81 
+set_robust_list 
+set_robust_list 
+getpid 
+getpid 
+open 
+open fd=12(<f>/etc/resolv.conf) name=/etc/resolv.conf flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=12(<f>/etc/resolv.conf) 
+fstat res=0 
+read fd=12(<f>/etc/resolv.conf) size=1536 
+read res=53 data=nameserver 127.0.0.11.options edns0 trust-ad ndots:0. 
+read fd=12(<f>/etc/resolv.conf) size=1536 
+read res=0 data= 
+close fd=12(<f>/etc/resolv.conf) 
+close res=0 
+uname 
+uname 
+open 
+open fd=12(<f>/etc/hosts) name=/etc/hosts flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=12(<f>/etc/hosts) 
+fstat res=0 
+read fd=12(<f>/etc/hosts) size=512 
+read res=174 data=127.0.0.1.localhost.::1.localhost ip6-localhost ip6-loopback.fe00::0.ip6-localne 
+read fd=12(<f>/etc/hosts) size=512 
+read res=0 data= 
+close fd=12(<f>/etc/hosts) 
+close res=0 
+socket domain=16(AF_ROUTE) type=3 proto=0 
+socket fd=12(<n>) 
+bind fd=12(<n>) 
+bind res=0 addr=NULL 
+getsockname 
+getsockname 
+sendto fd=12(<n>) size=20 tuple=NULL 
+sendto res=20 data=........d..d........ 
+recvmsg fd=12(<n>) 
+recvmsg res=164 size=164 data=L.......d..dQ...............................lo......................ZP#.ZP#.X... tuple=NULL 
+recvmsg fd=12(<n>) 
+recvmsg res=20 size=20 data=........d..dQ....... tuple=NULL 
+close fd=12(<n>) 
+close res=0 
+socket domain=2(AF_INET) type=2 proto=0 
+socket fd=12(<4>) 
+connect fd=12(<4>) 
+connect res=0 tuple=127.0.0.1:48211->127.0.0.1:9000 
+getsockname 
+getsockname 
+close fd=12(<4u>127.0.0.1:48211->127.0.0.1:9000) 
+close res=0 
+socket domain=10(AF_INET6) type=2 proto=0 
+socket fd=12(<6>) 
+connect fd=12(<6>) 
+connect res=-99(EADDRNOTAVAIL) tuple=:::49851->::1:9000 
+close fd=12(<6>) 
+close res=0 
+madvise 
+madvise 
+exit 
+accept fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) tuple=172.18.0.1:51228->172.18.0.3:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[668225]) 
+fcntl fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C7000 vm_size=383144 vm_rss=9044 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C5000 vm_size=383152 vm_rss=9044 vm_swap=0 
+read fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=8000 
+read res=1058 data=GET /wp-content/plugins/mail-masta/lib/custom.js?ver=4.9.2 HTTP/1.1..Host: local 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/custom.js 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C3000 vm_size=383160 vm_rss=9044 vm_swap=0 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/custom.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C1000 vm_size=383168 vm_rss=9044 vm_swap=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/custom.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/custom.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=5005 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/custom.js) offset=0 
+mmap res=7FEB70375000 vm_size=383176 vm_rss=9044 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70373000 vm_size=383184 vm_rss=9044 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383340 vm_rss=9044 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383532 vm_rss=9044 vm_swap=0 
+munmap addr=7FEB70375000 length=5005 
+munmap res=0 vm_size=383524 vm_rss=10248 vm_swap=0 
+accept fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) tuple=172.18.0.1:51236->172.18.0.3:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[668225]) 
+fcntl fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=1062 data=GET /wp-content/plugins/mail-masta/lib/subscriber.js?ver=4.9.2 HTTP/1.1..Host: l 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70375000 vm_size=383532 vm_rss=10248 vm_swap=0 
+brk addr=55711CA6A000 
+stat 
+brk res=55711CA6A000 vm_size=383340 vm_rss=10168 vm_swap=0 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/subscriber.js 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70371000 vm_size=383348 vm_rss=10168 vm_swap=0 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB7036F000 vm_size=383356 vm_rss=10168 vm_swap=0 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=8000 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=1670 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+writev res=1670 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+write fd=7(<p>pipe:[668224]) size=254 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/subscriber.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+write res=254 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-content/plugins/mail-masta/ 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/subscriber.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/subscriber.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=6458 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/subscriber.js) offset=0 
+mmap res=7FEB70369000 vm_size=383380 vm_rss=10320 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383572 vm_rss=10320 vm_swap=0 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/custom.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+munmap addr=7FEB70369000 length=6458 
+munmap res=0 vm_size=383564 vm_rss=10404 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383372 vm_rss=10320 vm_swap=0 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=2107 
+writev res=2107 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=258 
+write res=258 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/subscriber.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=8000 
+read res=1061 data=GET /wp-content/plugins/mail-masta/lib/bootstrap.js?ver=4.9.2 HTTP/1.1..Host: lo 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/bootstrap.js 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=1078 data=GET /wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js?ver=4.9.2 H 
+open 
+stat 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+open 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+close res=0 
+open 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/bootstrap.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/bootstrap.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/bootstrap.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=10810 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js) offset=0 
+mmap addr=0 length=59146 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/bootstrap.js) offset=0 
+mmap res=7FEB70368000 vm_size=383384 vm_rss=10320 vm_swap=0 
+mmap res=7FEB70360000 vm_size=383416 vm_rss=10168 vm_swap=0 
+brk addr=55711CA9A000 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383608 vm_rss=10168 vm_swap=0 
+brk res=55711CA9A000 vm_size=383576 vm_rss=10320 vm_swap=0 
+munmap addr=7FEB70368000 length=10810 
+munmap res=0 vm_size=383564 vm_rss=10408 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383372 vm_rss=10324 vm_swap=0 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=2752 
+writev res=2752 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=274 
+write res=274 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine-en.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+munmap addr=7FEB70360000 length=59146 
+munmap res=0 vm_size=383548 vm_rss=10404 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383356 vm_rss=10312 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB7036D000 vm_size=383364 vm_rss=10312 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=11612 
+writev res=11612 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=258 
+write res=258 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/bootstrap.js) 
+close res=0 
+read fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=8000 
+read res=1075 data=GET /wp-content/plugins/mail-masta/lib/jquery.validationEngine.js?ver=4.9.2 HTTP 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=68709 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js) offset=0 
+mmap res=7FEB7035C000 vm_size=383432 vm_rss=10312 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383624 vm_rss=10312 vm_swap=0 
+munmap addr=7FEB7035C000 length=68709 
+munmap res=0 vm_size=383556 vm_rss=10424 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383364 vm_rss=10320 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=16421 
+writev res=16421 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=272 
+write res=272 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery.validationEngine.js) 
+close res=0 
+read fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=1059 data=GET /wp-content/plugins/mail-masta/lib/jscolor.js?ver=4.9.2 HTTP/1.1..Host: loca 
+stat 
+stat res=-2(ENOENT) path=/var/www/html/wp-content/plugins/mail-masta/lib/jscolor.js 
+lstat 
+lstat res=0 path=/var 
+lstat 
+lstat res=0 path=/var/www 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+lstat 
+lstat res=0 path=/var/www/html 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html/wp-content 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins/mail-masta 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+lstat 
+lstat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+lstat 
+lstat res=-2(ENOENT) path=/var/www/html/wp-content/plugins/mail-masta/lib/jscolor.js 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=535 
+writev res=535 data=HTTP/1.1 404 Not Found..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4. 
+write fd=7(<p>pipe:[668224]) size=254 
+write res=254 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=8000 
+read res=1389 data=GET /wp-admin/load-scripts.php?c=0&load%5B%5D=hoverIntent,common,admin-bar,svg-p 
+stat 
+stat res=0 path=/var/www/html/wp-admin/load-scripts.php 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-admin/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-admin/load-scripts.php/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=884 data=GET /wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4 HTTP/1.1..Host: localh 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/resizable.min.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/ui/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-includes/js/jquery/ui/resizable.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/resizable.min.js) name=/var/www/html/wp-includes/js/jquery/ui/resizable.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=18426 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/resizable.min.js) offset=0 
+mmap res=7FEB70366000 vm_size=383392 vm_rss=10324 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383584 vm_rss=10324 vm_swap=0 
+munmap addr=7FEB70366000 length=18426 
+munmap res=0 vm_size=383564 vm_rss=10412 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383372 vm_rss=10324 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=5618 
+writev res=5618 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=253 
+write res=253 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-includes/js/jquery/ui/resiz 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/resizable.min.js) 
+close res=0 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+brk addr=55711CA8B000 
+brk res=55711CA8B000 vm_size=383496 vm_rss=10320 vm_swap=0 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+setitimer 
+setitimer 
+rt_sigaction 
+rt_sigaction 
+rt_sigprocmask 
+rt_sigprocmask 
+mmap addr=0 length=65536 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB7035D000 vm_size=383560 vm_rss=12132 vm_swap=0 
+getcwd 
+getcwd res=14 path=/var/www/html 
+chdir 
+chdir res=0 path=/var/www/html/wp-admin 
+fcntl fd=8(<f>/tmp/.ZendSem.bpZ2Z2 (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=65536 prot=7(PROT_READ|PROT_WRITE|PROT_EXEC) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB7034D000 vm_size=383624 vm_rss=13120 vm_swap=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/hoverIntent.min.js 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes 
+lstat 
+lstat res=0 path=/var/www/html 
+lstat 
+lstat res=0 path=/var/www 
+lstat 
+lstat res=0 path=/var 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/hoverIntent.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/hoverIntent.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/hoverIntent.min.js) name=/var/www/html/wp-includes/js/hoverIntent.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/hoverIntent.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/hoverIntent.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/hoverIntent.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/hoverIntent.min.js) size=8192 
+read res=1115 data=!function(a){a.fn.hoverIntent=function(b,c,d){var e={interval:100,sensitivity:6, 
+read fd=11(<f>/var/www/html/wp-includes/js/hoverIntent.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/hoverIntent.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/hoverIntent.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-admin/js/common.min.js 
+lstat 
+lstat res=0 path=/var/www/html//wp-admin/js 
+lstat 
+lstat res=0 path=/var/www/html//wp-admin 
+stat 
+stat res=0 path=/var/www/html/wp-admin/js/common.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-admin/js/common.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-admin/js 
+lstat 
+lstat res=0 path=/var/www/html/wp-admin 
+open 
+open fd=11(<f>/var/www/html/wp-admin/js/common.min.js) name=/var/www/html/wp-admin/js/common.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-admin/js/common.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-admin/js/common.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-admin/js/common.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-admin/js/common.min.js) size=8192 
+read res=8192 data=var showNotice,adminMenu,columns,validateForm,screenMeta;!function(a,b,c){functi 
+read fd=11(<f>/var/www/html/wp-admin/js/common.min.js) size=8192 
+read res=7229 data=sub").removeClass("opensub"),c.addClass("opensub"))})),B||C||(G.find("li.wp-has- 
+read fd=11(<f>/var/www/html/wp-admin/js/common.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-admin/js/common.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-admin/js/common.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/admin-bar.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/admin-bar.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/admin-bar.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/admin-bar.min.js) name=/var/www/html/wp-includes/js/admin-bar.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/admin-bar.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/admin-bar.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/admin-bar.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/admin-bar.min.js) size=8192 
+read res=7188 data="undefined"!=typeof jQuery?("undefined"==typeof jQuery.fn.hoverIntent&&!function 
+read fd=11(<f>/var/www/html/wp-includes/js/admin-bar.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/admin-bar.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/admin-bar.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-admin/js/svg-painter.js 
+stat 
+stat res=0 path=/var/www/html/wp-admin/js/svg-painter.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-admin/js/svg-painter.js 
+open 
+open fd=11(<f>/var/www/html/wp-admin/js/svg-painter.js) name=/var/www/html/wp-admin/js/svg-painter.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-admin/js/svg-painter.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-admin/js/svg-painter.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-admin/js/svg-painter.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-admin/js/svg-painter.js) size=8192 
+read res=5484 data=/**. * Attempt to re-color SVG icons used in the admin menu or the toolbar. *. * 
+read fd=11(<f>/var/www/html/wp-admin/js/svg-painter.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-admin/js/svg-painter.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-admin/js/svg-painter.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/heartbeat.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/heartbeat.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/heartbeat.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/heartbeat.min.js) name=/var/www/html/wp-includes/js/heartbeat.min.js flags=1(O_RDONLY) mode=0 dev=34 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=882 data=GET /wp-includes/js/jquery/ui/spinner.min.js?ver=1.11.4 HTTP/1.1..Host: localhos 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/spinner.min.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/ui/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-includes/js/jquery/ui/spinner.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/spinner.min.js) name=/var/www/html/wp-includes/js/jquery/ui/spinner.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=7104 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/spinner.min.js) offset=0 
+mmap res=7FEB70369000 vm_size=383380 vm_rss=10324 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383572 vm_rss=10324 vm_swap=0 
+munmap addr=7FEB70369000 length=7104 
+munmap res=0 vm_size=383564 vm_rss=10408 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383372 vm_rss=10324 vm_swap=0 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=2703 
+writev res=2703 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=251 
+write res=251 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-includes/js/jquery/ui/spinn 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/spinner.min.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+fstat fd=11(<f>/var/www/html/wp-includes/js/heartbeat.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/heartbeat.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/heartbeat.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/heartbeat.min.js) size=8192 
+read res=5531 data=!function(a,b,c){var d=function(){function d(){var c,d,f,h;"string"==typeof b.pa 
+read fd=11(<f>/var/www/html/wp-includes/js/heartbeat.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/heartbeat.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/heartbeat.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/wp-auth-check.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/wp-auth-check.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/wp-auth-check.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/wp-auth-check.min.js) name=/var/www/html/wp-includes/js/wp-auth-check.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/wp-auth-check.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/wp-auth-check.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/wp-auth-check.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/wp-auth-check.min.js) size=8192 
+read res=1783 data=!function(a){function b(){var b,d=a("#wp-auth-check"),f=a("#wp-auth-check-form") 
+read fd=11(<f>/var/www/html/wp-includes/js/wp-auth-check.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/wp-auth-check.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/wp-auth-check.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/core.min.js 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/core.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/core.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/core.min.js) name=/var/www/html/wp-includes/js/jquery/ui/core.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/core.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/core.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/core.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/core.min.js) size=8192 
+read res=4000 data=/*!. * jQuery UI Core 1.11.4. * http://jqueryui.com. *. * Copyright jQuery Found 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/core.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/core.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/core.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/widget.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/widget.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/widget.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/widget.min.js) name=/var/www/html/wp-includes/js/jquery/ui/widget.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/widget.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/widget.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/widget.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/widget.min.js) size=8192 
+read res=6908 data=/*!. * jQuery UI Widget 1.11.4. * http://jqueryui.com. *. * Copyright jQuery Fou 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/widget.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/widget.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/widget.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/mouse.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/mouse.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/mouse.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/mouse.min.js) name=/var/www/html/wp-includes/js/jquery/ui/mouse.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/mouse.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/mouse.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/mouse.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/mouse.min.js) size=8192 
+read res=3148 data=/*!. * jQuery UI Mouse 1.11.4. * http://jqueryui.com. *. * Copyright jQuery Foun 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/mouse.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/mouse.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/mouse.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/accordion.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/accordion.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/accordion.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/accordion.min.js) name=/var/www/html/wp-includes/js/jquery/ui/accordion.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/accordion.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/accordion.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/accordion.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/accordion.min.js) size=8192 
+read res=8192 data=/*!. * jQuery UI Accordion 1.11.4. * http://jqueryui.com. *. * Copyright jQuery  
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/accordion.min.js) size=8192 
+read res=392 data=nt"!==g.options.heightStyle&&(c.now=Math.round(d-b.outerHeight()-h),h=0)}})):b.a 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/accordion.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/accordion.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/accordion.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/position.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/position.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/position.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/position.min.js) name=/var/www/html/wp-includes/js/jquery/ui/position.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/position.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/position.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/position.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/position.min.js) size=8192 
+read res=6527 data=/*!. * jQuery UI Position 1.11.4. * http://jqueryui.com. *. * Copyright jQuery F 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/position.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/position.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/position.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/menu.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/menu.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/menu.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/menu.min.js) name=/var/www/html/wp-includes/js/jquery/ui/menu.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/menu.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/menu.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/menu.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/menu.min.js) size=8192 
+read res=8192 data=/*!. * jQuery UI Menu 1.11.4. * http://jqueryui.com. *. * Copyright jQuery Found 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/menu.min.js) size=8192 
+read res=1408 data=l":"nextAll"](".ui-menu-item").eq(-1):this.active[a+"All"](".ui-menu-item").eq(0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/menu.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/menu.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/menu.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/wp-a11y.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/wp-a11y.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/wp-a11y.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) name=/var/www/html/wp-includes/js/wp-a11y.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) size=8192 
+read res=653 data=window.wp=window.wp||{},function(a,b){"use strict";function c(a,c){e(),a=b("<p>" 
+read fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/wp-a11y.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/autocomplete.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js) name=/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js) size=8192 
+read res=8192 data=/*!. * jQuery UI Autocomplete 1.11.4. * http://jqueryui.com. *. * Copyright jQue 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js) size=8192 
+read res=91 data=ion.children().hide(),a("<div>").text(c).appendTo(this.liveRegion))}}),a.ui.auto 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/autocomplete.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/slider.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/slider.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/slider.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/slider.min.js) name=/var/www/html/wp-includes/js/jquery/ui/slider.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/slider.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/slider.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/slider.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/slider.min.js) size=8192 
+read res=8192 data=/*!. * jQuery UI Slider 1.11.4. * http://jqueryui.com. *. * Copyright jQuery Fou 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/slider.min.js) size=8192 
+read res=2795 data=(".");return c===-1?0:b.length-c-1},_valueMin:function(){return this.options.min 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/slider.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/slider.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/slider.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/tabs.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/tabs.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/tabs.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/tabs.min.js) name=/var/www/html/wp-includes/js/jquery/ui/tabs.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/tabs.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/tabs.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/tabs.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/tabs.min.js) size=8192 
+read res=8192 data=/*!. * jQuery UI Tabs 1.11.4. * http://jqueryui.com. *. * Copyright jQuery Found 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/tabs.min.js) size=8192 
+read res=3918 data=le||this._trigger("beforeActivate",b,k)===!1||(c.active=!h&&this.tabs.index(f),t 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/tabs.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/tabs.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/tabs.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/sortable.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/sortable.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/sortable.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) name=/var/www/html/wp-includes/js/jquery/ui/sortable.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) size=8192 
+read res=8192 data=/*!. * jQuery UI Sortable 1.11.4. * http://jqueryui.com. *. * Copyright jQuery F 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) size=8192 
+read res=8192 data=is.currentItem):a(this.domPosition.parent).prepend(this.currentItem)),this},seri 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) size=8192 
+read res=8192 data=er.apply(this.element[0],[b,this.currentItem])):"clone"===c.helper?this.currentI 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) size=8192 
+read res=323 data=lHelperRemoval},_trigger:function(){a.Widget.prototype._trigger.apply(this,argum 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/sortable.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/draggable.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/draggable.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/draggable.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) name=/var/www/html/wp-includes/js/jquery/ui/draggable.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) size=8192 
+read res=8192 data=/*!. * jQuery UI Draggable 1.11.4. * http://jqueryui.com. *. * Copyright jQuery  
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) size=8192 
+read res=8192 data=argins.top]):e.containment.constructor===Array?void(this.containment=e.containme 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) size=8192 
+read res=2521 data=aggable)":e.snap).each(function(){var b=a(this),c=b.offset();this!==d.element[0] 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/draggable.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/droppable.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/droppable.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/droppable.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/droppable.min.js) name=/var/www/html/wp-includes/js/jquery/ui/droppable.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/droppable.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/droppable.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/droppable.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/droppable.min.js) size=8192 
+read res=6267 data=/*!. * jQuery UI Droppable 1.11.4. * http://jqueryui.com. *. * Copyright jQuery  
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/droppable.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/droppable.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/droppable.min.js) 
+close res=0 
+lstat 
+lstat res=0 path=/var/www/html//wp-includes/js/jquery/ui/selectable.min.js 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/selectable.min.js 
+lstat 
+lstat res=0 path=/var/www/html/wp-includes/js/jquery/ui/selectable.min.js 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/selectable.min.js) name=/var/www/html/wp-includes/js/jquery/ui/selectable.min.js flags=1(O_RDONLY) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/selectable.min.js) 
+fstat res=0 
+lseek fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/selectable.min.js) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/selectable.min.js) 
+fstat res=0 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/selectable.min.js) size=8192 
+read res=4258 data=/*!. * jQuery UI Selectable 1.11.4. * http://jqueryui.com. *. * Copyright jQuery 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/selectable.min.js) size=8192 
+read res=0 data= 
+read fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/selectable.min.js) size=8192 
+read res=0 data= 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/selectable.min.js) 
+close res=0 
+brk addr=55711CAB7000 
+brk res=55711CAB7000 vm_size=383800 vm_rss=15280 vm_swap=0 
+brk addr=55711CAF7000 
+brk res=55711CAF7000 vm_size=384056 vm_rss=15280 vm_swap=0 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=1072 data=GET /wp-content/plugins/social-warfare/assets/js/script.min.js?ver=3.5.2 HTTP/1. 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/social-warfare/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/social-warfare/assets/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/social-warfare/assets/js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js) name=/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=11801 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js) offset=0 
+mmap res=7FEB70368000 vm_size=383384 vm_rss=10324 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383576 vm_rss=10324 vm_swap=0 
+munmap addr=7FEB70368000 length=11801 
+munmap res=0 vm_size=383564 vm_rss=10412 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383372 vm_rss=10324 vm_swap=0 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+writev fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=3926 
+writev res=3926 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=268 
+write res=268 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-content/plugins/social-warf 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/social-warfare/assets/js/script.min.js) 
+close res=0 
+poll fds=10:41 timeout=5000 
+poll res=1 fds=10:41 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=1078 data=GET /wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js?ver=4.9.2 H 
+stat 
+stat res=0 path=/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-content/plugins/mail-masta/lib/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js) name=/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=76503 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js) offset=0 
+mmap res=7FEB70358000 vm_size=383448 vm_rss=10324 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383640 vm_rss=10324 vm_swap=0 
+munmap addr=7FEB70358000 length=76503 
+munmap res=0 vm_size=383564 vm_rss=10432 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383372 vm_rss=10324 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=18096 
+writev res=18096 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=275 
+write res=275 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-content/plugins/mail-masta/ 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-content/plugins/mail-masta/lib/jquery-ui-timepicker-addon.js) 
+close res=0 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+chdir 
+chdir res=0 path=/var/www/html 
+setitimer 
+setitimer 
+fcntl fd=8(<f>/tmp/.ZendSem.bpZ2Z2 (deleted)) cmd=8(F_SETLK) 
+fcntl res=0(<f>/dev/null) 
+setitimer 
+setitimer 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB7034B000 vm_size=384064 vm_rss=15728 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70349000 vm_size=384072 vm_rss=15728 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70347000 vm_size=384080 vm_rss=15728 vm_swap=0 
+brk addr=55711CAB7000 
+brk res=55711CAB7000 vm_size=383824 vm_rss=15716 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70345000 vm_size=383832 vm_rss=15716 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=42280 
+writev res=42280 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:37 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=586 
+write res=586 data=172.18.0.1 - - [08/Aug/2023:01:20:37 +0000] "GET /wp-admin/load-scripts.php?c=0& 
+times 
+times 
+read fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+clone res=0 exe=apache2 args=-DFOREGROUND. tid=483257(apache2) pid=483257(apache2) ptid=476837(apache2) cwd= fdlimit=1048576 pgft_maj=0 pgft_min=1 vm_size=383104 vm_rss=7640 vm_swap=0 comm=apache2 cgroups=cpuset=/system.slice/docker-16ae8d7cd5fb26f69d2b3694871b56f03e50ad52cedd860b3... flags=562036736(CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID) uid=0 gid=0 vtid=90 vpid=90 
+set_robust_list 
+set_robust_list 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+getpid 
+getpid 
+getpid 
+getpid 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703CF000 vm_size=383112 vm_rss=7640 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703CD000 vm_size=383120 vm_rss=7640 vm_swap=0 
+geteuid 
+geteuid euid=0(root) 
+setgid gid=33(www-data) 
+setgid res=0 
+open 
+open fd=9(<f>/proc/sys/kernel/ngroups_max) name=/proc/sys/kernel/ngroups_max flags=1(O_RDONLY) mode=0 dev=5E 
+read fd=9(<f>/proc/sys/kernel/ngroups_max) size=31 
+read res=6 data=65536. 
+close fd=9(<f>/proc/sys/kernel/ngroups_max) 
+close res=0 
+open 
+open fd=9(<f>/etc/group) name=/etc/group flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=5C 
+lseek fd=9(<f>/etc/group) offset=0 whence=1(SEEK_CUR) 
+lseek res=0 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+mmap addr=0 length=446 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=9(<f>/etc/group) offset=0 
+mmap res=7FEB703CC000 vm_size=383124 vm_rss=7640 vm_swap=0 
+lseek fd=9(<f>/etc/group) offset=446 whence=0(SEEK_SET) 
+lseek res=446 
+fstat fd=9(<f>/etc/group) 
+fstat res=0 
+munmap addr=7FEB703CC000 length=446 
+munmap res=0 vm_size=383120 vm_rss=9044 vm_swap=0 
+close fd=9(<f>/etc/group) 
+close res=0 
+setgroups 
+setgroups 
+geteuid 
+geteuid euid=0(root) 
+setuid uid=33(www-data) 
+setuid res=0 
+getpid 
+getpid 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+rt_sigaction 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703CB000 vm_size=383128 vm_rss=9044 vm_swap=0 
+getpid 
+getpid 
+epoll_create1 
+epoll_create1 
+epoll_ctl 
+epoll_ctl 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C9000 vm_size=383136 vm_rss=9044 vm_swap=0 
+accept flags=0 
+poll res=0 fds= 
+shutdown fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) how=1(SHUT_WR) 
+shutdown res=0 
+poll fds=10:41 timeout=2000 
+poll res=1 fds=10:421 
+read fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) size=512 
+read res=0 data= 
+close fd=10(<4t>172.18.0.1:51236->172.18.0.3:80) 
+close res=0 
+read fd=4(<p>pipe:[669184]) size=1 
+read res=-11(EAGAIN) data= 
+accept flags=0 
+poll res=0 fds= 
+shutdown fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) how=1(SHUT_WR) 
+shutdown res=0 
+poll fds=10:41 timeout=2000 
+poll res=1 fds=10:421 
+read fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) size=512 
+read res=0 data= 
+close fd=10(<4t>172.18.0.1:51228->172.18.0.3:80) 
+close res=0 
+read fd=4(<p>pipe:[669184]) size=1 
+read res=-11(EAGAIN) data= 
+accept flags=0 
+accept fd=10(<4t>172.18.0.1:52398->172.18.0.3:80) tuple=172.18.0.1:52398->172.18.0.3:80 queuepct=0 queuelen=0 queuemax=511 
+getsockname 
+getsockname 
+fcntl fd=10(<4t>172.18.0.1:52398->172.18.0.3:80) cmd=4(F_GETFL) 
+fcntl res=2(<p>pipe:[668225]) 
+fcntl fd=10(<4t>172.18.0.1:52398->172.18.0.3:80) cmd=5(F_SETFL) 
+fcntl res=0(<f>/dev/null) 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C7000 vm_size=383144 vm_rss=9044 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C5000 vm_size=383152 vm_rss=9044 vm_swap=0 
+read fd=10(<4t>172.18.0.1:52398->172.18.0.3:80) size=8000 
+read res=887 data=GET /wp-includes/js/jquery/ui/resizable.min.js?ver=1.11.4 HTTP/1.1..Host: localh 
+stat 
+stat res=0 path=/var/www/html/wp-includes/js/jquery/ui/resizable.min.js 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C3000 vm_size=383160 vm_rss=9044 vm_swap=0 
+open 
+open fd=-2(ENOENT) name=/var/www/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/.htaccess) name=/var/www/html/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+fstat fd=11(<f>/var/www/html/.htaccess) 
+fstat res=0 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=35 data=# BEGIN WordPress..# END WordPress. 
+read fd=11(<f>/var/www/html/.htaccess) size=4096 
+read res=0 data= 
+close fd=11(<f>/var/www/html/.htaccess) 
+close res=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-2(ENOENT) name=/var/www/html/wp-includes/js/jquery/ui/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=-20(ENOTDIR) name=/var/www/html/wp-includes/js/jquery/ui/resizable.min.js/.htaccess flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=0 
+open 
+open fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/resizable.min.js) name=/var/www/html/wp-includes/js/jquery/ui/resizable.min.js flags=4097(O_RDONLY|O_CLOEXEC) mode=0 dev=34 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB703C1000 vm_size=383168 vm_rss=9044 vm_swap=0 
+mmap addr=0 length=18426 prot=1(PROT_READ) flags=1(MAP_SHARED) fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/resizable.min.js) offset=0 
+mmap res=7FEB70372000 vm_size=383188 vm_rss=9044 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70370000 vm_size=383196 vm_rss=9044 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383352 vm_rss=9044 vm_swap=0 
+brk addr=55711CA9A000 
+brk res=55711CA9A000 vm_size=383544 vm_rss=9044 vm_swap=0 
+munmap addr=7FEB70372000 length=18426 
+munmap res=0 vm_size=383524 vm_rss=10288 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70375000 vm_size=383532 vm_rss=10288 vm_swap=0 
+brk addr=55711CA6A000 
+brk res=55711CA6A000 vm_size=383340 vm_rss=10208 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB70373000 vm_size=383348 vm_rss=10208 vm_swap=0 
+mmap addr=0 length=8192 prot=3(PROT_READ|PROT_WRITE) flags=10(MAP_PRIVATE|MAP_ANONYMOUS) fd=-1(EPERM) offset=0 
+mmap res=7FEB7036E000 vm_size=383356 vm_rss=10208 vm_swap=0 
+writev fd=10(<4t>172.18.0.1:52398->172.18.0.3:80) size=5619 
+writev res=5619 data=HTTP/1.1 200 OK..Date: Tue, 08 Aug 2023 01:20:48 GMT..Server: Apache/2.4.25 (Deb 
+write fd=7(<p>pipe:[668224]) size=256 
+write res=256 data=172.18.0.1 - - [08/Aug/2023:01:20:48 +0000] "GET /wp-includes/js/jquery/ui/resiz 
+times 
+times 
+close fd=11(<f>/var/www/html/wp-includes/js/jquery/ui/resizable.min.js) 
+close res=0 
+read fd=10(<4t>172.18.0.1:52398->172.18.0.3:80) size=8000 
+read res=-11(EAGAIN) data= 
+poll fds=10:41 timeout=5000 
+poll res=0 fds= 
+shutdown fd=10(<4t>172.18.0.1:52398->172.18.0.3:80) how=1(SHUT_WR) 
+shutdown res=0 
+poll fds=10:41 timeout=2000 
+poll res=1 fds=10:421 
+read fd=10(<4t>172.18.0.1:52398->172.18.0.3:80) size=512 
+read res=0 data= 
+close fd=10(<4t>172.18.0.1:52398->172.18.0.3:80) 
+close res=0 
+read fd=4(<p>pipe:[669184]) size=1 
+read res=-11(EAGAIN) data= 
+accept flags=0 
