@@ -1,14 +1,12 @@
 # HIDS Docker
 
-In this repository we present a docker dataset based on system calls and the source code used for its experimental evaluation, more details are presented in [HIDS Docker Information] (you can also read the same README in [portuguese](README.pt.md)):
+In this repository we present a docker dataset based on system calls and the source code used for its experimental evaluation (you can also read the same README in [portuguese](README.pt.md)):
 
 ## Table of Contents ##
 - [How do I get set up?](#how-do-i-get-set-up?)
     - [Install](#install)
     - [Setup](#setup)
 - [Examples](#examples)
-- [Contribution guidelines](#contribution-guidelines)
-- [License](#license)
 
 ## How do I get set up? ##
 
