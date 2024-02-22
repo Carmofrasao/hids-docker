@@ -1,6 +1,6 @@
 # HIDS Docker
 
-In this repository we present a docker dataset based on system calls and the source code used for its experimental evaluation (you can also read the same README in [portuguese](README.pt.md)):
+In this repository we present a docker dataset based on system calls and the source code used for its experimental evaluation:
 
 ## Table of Contents ##
 - [How do I get set up?](#how-do-i-get-set-up?)
